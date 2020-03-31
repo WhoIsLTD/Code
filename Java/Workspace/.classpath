@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry excluding="ThongTinHVHCN/src/|QuickNote/src/" kind="src" path=""/>
+	<classpathentry kind="src" path="QuickNote/src"/>
+	<classpathentry kind="src" path="ThongTinHVHCN/src"/>
+	<classpathentry kind="output" path="QuickNote/bin"/>
+</classpath>

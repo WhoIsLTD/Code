@@ -1,0 +1,118 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bai2",
+            "request": "launch",
+            "mainClass": "bai2",
+            "projectName": "Bai_tap"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bai5",
+            "request": "launch",
+            "mainClass": "Bai_tap.bai5",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bai4",
+            "request": "launch",
+            "mainClass": "Bai_tap.bai4",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bai3",
+            "request": "launch",
+            "mainClass": "Bai_tap.bai3",
+            "projectName": "Java"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - matrix",
+            "request": "launch",
+            "mainClass": "matrix",
+            "projectName": "Code_a7bd7f47"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bai6",
+            "request": "launch",
+            "mainClass": "bai6",
+            "projectName": "Code_a7bd7f47"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bai5",
+            "request": "launch",
+            "mainClass": "bai5",
+            "projectName": "Code_a7bd7f47"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bai4",
+            "request": "launch",
+            "mainClass": "bai4",
+            "projectName": "Code_a7bd7f47"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bai3",
+            "request": "launch",
+            "mainClass": "bai3",
+            "projectName": "Code_a7bd7f47"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bai2",
+            "request": "launch",
+            "mainClass": "bai2",
+            "projectName": "Code_a7bd7f47"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bai1",
+            "request": "launch",
+            "mainClass": "bai1",
+            "projectName": "Code_a7bd7f47"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Variables",
+            "request": "launch",
+            "mainClass": "Variables",
+            "projectName": "Code_a7bd7f47"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - test",
+            "request": "launch",
+            "mainClass": "kiemtrasoduong.test"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - test",
+            "request": "launch",
+            "mainClass": "Test.test",
+            "projectName": "Code_a7bd7f47"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Simple<Code_a7bd7f47>",
+            "request": "launch",
+            "mainClass": "Simple",
+            "projectName": "Code_a7bd7f47"
+        }
+    ]
+}

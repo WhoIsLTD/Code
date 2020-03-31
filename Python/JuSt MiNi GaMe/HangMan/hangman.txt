@@ -1,0 +1,10 @@
+apple
+banana
+hello
+world
+mister
+grapes
+fantastic
+beautiful
+pretty
+orange
