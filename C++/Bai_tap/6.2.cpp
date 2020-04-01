@@ -58,7 +58,7 @@ class HD : public Nguoi
 
 public:
     void nhap();
-    void in();
+    //void in();
     int tinhLuong();
 };
 

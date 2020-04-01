@@ -74,6 +74,15 @@ void addBefore(List &l, Node *q, Node *new_node)
 {
     Node *e;
     Node *p = l.pHead;
+    while (p != NULL)
+    {
+        if (p->data == q->data)
+            break;
+        p = p->pNext;
+    }
+    if (p->data != q->data)
+        cout << "khong tim thay Node q" << endl;
+    p = l.pHead;
     while (p->data != q->data && p != NULL)
     {
         e = p;
@@ -81,8 +90,7 @@ void addBefore(List &l, Node *q, Node *new_node)
     }
     new_node->pNext = e->pNext;
     e->pNext = new_node;
-    if (p->data != q->data)
-        cout << "khong tim thay Node q" << endl;
+    
 }
 // dao nguoc list
 int nghichDao(List &l)
@@ -236,12 +244,10 @@ int doiXung(List l)
     }
     if (n % 2 != 0)
     {
-        for (i = 0; i < n / 2; i++)
+        for (i = 0; i <= n / 2; i++)
         {
             if (a[(n / 2) - i] != a[(n / 2) + i])
-            {
                 return 1;
-            }
         }
     }
     else
