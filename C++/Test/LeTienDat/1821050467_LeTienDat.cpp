@@ -74,26 +74,29 @@ void addBefore(List &l, Node *q, Node *new_node)
 {
     Node *e;
     Node *p = l.pHead;
-    int dem =0;
-    if (new_node->data == p->data)
+    int dem = 0;
+    if (q->data == p->data)
         addHead(l, new_node);
     else
     {
         while (p != NULL)
         {
             if (p->data == new_node->data)
-                dem++;
+            {
+                dem += 1;
                 break;
+            }
             p = p->pNext;
         }
         if (dem == 0)
             cout << "khong tim thay Node q" << endl;
         p = l.pHead;
-        while (p->data != q->data && p != NULL)
+        while (p->data != q->data || p != NULL)
         {
             e = p;
             p = p->pNext;
         }
+
         new_node->pNext = e->pNext;
         e->pNext = new_node;
     }
