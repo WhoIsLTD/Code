@@ -74,23 +74,29 @@ void addBefore(List &l, Node *q, Node *new_node)
 {
     Node *e;
     Node *p = l.pHead;
-    while (p != NULL)
+    int dem =0;
+    if (new_node->data == p->data)
+        addHead(l, new_node);
+    else
     {
-        if (p->data == q->data)
-            break;
-        p = p->pNext;
+        while (p != NULL)
+        {
+            if (p->data == new_node->data)
+                dem++;
+                break;
+            p = p->pNext;
+        }
+        if (dem == 0)
+            cout << "khong tim thay Node q" << endl;
+        p = l.pHead;
+        while (p->data != q->data && p != NULL)
+        {
+            e = p;
+            p = p->pNext;
+        }
+        new_node->pNext = e->pNext;
+        e->pNext = new_node;
     }
-    if (p->data != q->data)
-        cout << "khong tim thay Node q" << endl;
-    p = l.pHead;
-    while (p->data != q->data && p != NULL)
-    {
-        e = p;
-        p = p->pNext;
-    }
-    new_node->pNext = e->pNext;
-    e->pNext = new_node;
-    
 }
 // dao nguoc list
 int nghichDao(List &l)
