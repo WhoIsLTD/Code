@@ -171,29 +171,6 @@ int bigger(List l, int a)
         p = p->pNext;
     }
 }
-
-void delPos(List &l, int x)
-{
-
-    Node *p = l.pHead;
-    Node *q = p;
-    if (x == 0)
-    {
-        l.pHead = p->pNext;
-        delete p;
-    }
-
-    for (int i = 0; i < x; i++)
-    {
-        q = p;
-        p = p->pNext;
-    }
-
-    q->pNext = p->pNext;
-    if (l.pTail == p)
-        l.pTail = q;
-    delete p;
-}
 // tim so nguyen to trong danh sach
 SoNT snt(List l)
 {
@@ -384,147 +361,147 @@ int main()
         int chon = choose();
         switch (chon)
         {
-            case 1:
-            {
-                cout << "Nhap vao pt muon them vao cuoi ds: ";
-                cin >> m;
-                p = getNode(m);
-                addTail(l, p);
-                output(l);
-                break;
-            }
-            case 2:
-            {
-                Node *g, *h;
-                cout << "Nhap vao pt muon them: ";
-                cin >> m;
-                h = getNode(m);
-                cout << "Nhap vao pt bi them: ";
-                cin >> n;
-                g = getNode(n);
-                addBefore(l, g, h);
-                output(l);
-                break;
-            }
-            case 3:
-            {
-                cout << "In DS: " << endl;
-                output(l);
-                break;
-            }
-            case 4:
-            {
-                cout << "Ds dao nguoc: " << endl;
-                nghichDao(l);
-                output(l);
-                break;
-            }
-            case 5:
-            {
-                GT a = maxMin(l);
-                cout << "gia tri lon nhat la: " << a.maxx << endl
-                    << "gia tri nho nhat la: " << a.minn << endl;
-                break;
-            }
-            case 6:
-            {
-                Sum b = tong(l);
-                cout << "tong gia tri am la: " << b.am << endl
-                    << "tong gia tri duong la: " << b.duong << endl;
-                break;
-            }
-            case 7:
-            {
-                Sum b = tong(l);
-                cout << "tich cac so trong danh sach la: " << b.tich << endl;
-                break;
-            }
-            case 8:
-            {
-                Sum b = tong(l);
-                cout << "tong binh phuong cac so trong danh sach la: " << b.binhPhuong << endl;
-                break;
-            }
-            case 9:
-            {
-                cout << "nhap vao x: ";
-                cin >> m;
-                cout << "cac boi cua " << m << " la: " << endl;
-                boi(l, m);
-                break;
-            }
-            case 10:
-            {
-                cout << "nhap vao x: ";
-                cin >> m;
-                cout << "cac uoc cua " << m << " la: " << endl;
-                uoc(l, m);
-                break;
-            }
-            case 11:
-            {
-                cout << "nhap vao x: ";
-                cin >> m;
-                cout << "gia tri dau tien lon hon " << m << " trong danh sach la: " << bigger(l, m) << endl;
-                break;
-            }
-            case 12:
-            {
-                SoNT c = snt(l);
-                cout << "So nguyen to cuoi cung la: " << c.soCuoi << endl;
-                break;
-            }
-            case 13:
-            {
-                SoNT c = snt(l);
-                cout << "So luong cac so nguyen to trong ds la: " << c.dem << endl;
-                break;
-            }
-            case 14:
-            {
-                int d = tangDan(l);
-                if (d == 0)
-                    cout << "danh sach tang dan" << endl;
-                else
-                    cout << "danh sach khong tang dan" << endl;
-                break;
-            }
-            case 15:
-            {
-                int e = doiXung(l);
-                if (e == 1)
-                    cout << "danh sach khong doi xung" << endl;
-                else
-                    cout << "danh sach doi xung" << endl;
-                break;
-            }
-            case 16:
-            {
-                cout << "Xoa phan tu cuoi danh sach" << endl;
-                removeTail(l);
-                output(l);
-                break;
-            }
-            case 17:
-            {
-                cout << "xoa phan tu dau danh sach" << endl;
-                removeHead(l);
-                output(l);
-                break;
-            }
-            case 18:
-            {
-                cout << "Xoa toan bo danh sach" << endl;
-                removeList(l);
-                output(l);
-                break;
-            }
-            case 19:
-            {
-                cout << "Thoat!!!\n";
-                exit(1);
-                break;
-            }
+        case 1:
+        {
+            cout << "Nhap vao pt muon them vao cuoi ds: ";
+            cin >> m;
+            p = getNode(m);
+            addTail(l, p);
+            output(l);
+            break;
+        }
+        case 2:
+        {
+            Node *g, *h;
+            cout << "Nhap vao pt muon them: ";
+            cin >> m;
+            h = getNode(m);
+            cout << "Nhap vao pt bi them: ";
+            cin >> n;
+            g = getNode(n);
+            addBefore(l, g, h);
+            output(l);
+            break;
+        }
+        case 3:
+        {
+            cout << "In DS: " << endl;
+            output(l);
+            break;
+        }
+        case 4:
+        {
+            cout << "Ds dao nguoc: " << endl;
+            nghichDao(l);
+            output(l);
+            break;
+        }
+        case 5:
+        {
+            GT a = maxMin(l);
+            cout << "gia tri lon nhat la: " << a.maxx << endl
+                 << "gia tri nho nhat la: " << a.minn << endl;
+            break;
+        }
+        case 6:
+        {
+            Sum b = tong(l);
+            cout << "tong gia tri am la: " << b.am << endl
+                 << "tong gia tri duong la: " << b.duong << endl;
+            break;
+        }
+        case 7:
+        {
+            Sum b = tong(l);
+            cout << "tich cac so trong danh sach la: " << b.tich << endl;
+            break;
+        }
+        case 8:
+        {
+            Sum b = tong(l);
+            cout << "tong binh phuong cac so trong danh sach la: " << b.binhPhuong << endl;
+            break;
+        }
+        case 9:
+        {
+            cout << "nhap vao x: ";
+            cin >> m;
+            cout << "cac boi cua " << m << " la: " << endl;
+            boi(l, m);
+            break;
+        }
+        case 10:
+        {
+            cout << "nhap vao x: ";
+            cin >> m;
+            cout << "cac uoc cua " << m << " la: " << endl;
+            uoc(l, m);
+            break;
+        }
+        case 11:
+        {
+            cout << "nhap vao x: ";
+            cin >> m;
+            cout << "gia tri dau tien lon hon " << m << " trong danh sach la: " << bigger(l, m) << endl;
+            break;
+        }
+        case 12:
+        {
+            SoNT c = snt(l);
+            cout << "So nguyen to cuoi cung la: " << c.soCuoi << endl;
+            break;
+        }
+        case 13:
+        {
+            SoNT c = snt(l);
+            cout << "So luong cac so nguyen to trong ds la: " << c.dem << endl;
+            break;
+        }
+        case 14:
+        {
+            int d = tangDan(l);
+            if (d == 0)
+                cout << "danh sach tang dan" << endl;
+            else
+                cout << "danh sach khong tang dan" << endl;
+            break;
+        }
+        case 15:
+        {
+            int e = doiXung(l);
+            if (e == 1)
+                cout << "danh sach khong doi xung" << endl;
+            else
+                cout << "danh sach doi xung" << endl;
+            break;
+        }
+        case 16:
+        {
+            cout << "Xoa phan tu cuoi danh sach" << endl;
+            removeTail(l);
+            output(l);
+            break;
+        }
+        case 17:
+        {
+            cout << "xoa phan tu dau danh sach" << endl;
+            removeHead(l);
+            output(l);
+            break;
+        }
+        case 18:
+        {
+            cout << "Xoa toan bo danh sach" << endl;
+            removeList(l);
+            output(l);
+            break;
+        }
+        case 19:
+        {
+            cout << "Thoat!!!\n";
+            exit(1);
+            break;
+        }
         }
     }
 }
