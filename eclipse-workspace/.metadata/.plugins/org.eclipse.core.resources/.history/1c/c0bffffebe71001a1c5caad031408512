@@ -1,6 +1,0 @@
-
-public class NguoiDung {
-	SuKienSapToi[] dsSKST;
-	SuKienDaQua[] dsSCDQ;
-	
-}

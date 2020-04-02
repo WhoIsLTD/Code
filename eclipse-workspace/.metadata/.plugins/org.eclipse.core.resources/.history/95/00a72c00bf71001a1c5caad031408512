@@ -1,9 +1,0 @@
-
-public class SuViecDaQua extends GhiChu{
-	String tenNguoiLienQuan, ketQuaSuViec, danhGia;
-	void nhapGT(String gTritenNguoiLienQuan, String gTriketQuaSuViec, String gTridanhGia) {
-		//
-	}
-	nhapGT()
-	
-}

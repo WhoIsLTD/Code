@@ -1,6 +1,0 @@
-
-public class Media {
-	String id, ten;
-	int size;
-	
-}
