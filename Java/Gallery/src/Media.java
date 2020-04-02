@@ -7,5 +7,8 @@ public class Media {
 		// nhap thong tin
 
 	}
+	void play() {
+		//xem video
+	}
 
 }

@@ -6,6 +6,12 @@ public class HinhAnh extends Media {
 		//nhap thong tin
 		nhapGT(gTriId, gTriTen, gTriSize);
 	}
+	void xoay() {
+		// xoay anh
+	}
+	void thuphong() {
+		//thu phong
+	}
 	
 	
 }
