@@ -5,5 +5,3 @@
 ```
 
 >#### Follow me [here](https://facebook.com/o.L.T.D.o)
->>_LTD_
-
