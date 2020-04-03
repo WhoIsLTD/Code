@@ -1,3 +1,4 @@
+package com.ltd.quicknote.ghichu;
 
 public class GhiChu {
 	String ma, TieuDe, NoiDung, ThoiGian, DiaDiem;

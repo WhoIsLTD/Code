@@ -1,3 +1,7 @@
+package com.ltd.tthvhcn.tugiac;
+
+import com.ltd.tthvhcn.dinh.Dinh;
+
 public abstract class TuGiac {
 	Dinh d1, d2, d3, d4;
 	double chuVi, dienTich;

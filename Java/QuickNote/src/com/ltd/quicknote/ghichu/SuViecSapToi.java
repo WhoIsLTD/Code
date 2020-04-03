@@ -1,3 +1,4 @@
+package com.ltd.quicknote.ghichu;
 
 public class SuViecSapToi extends GhiChu {
 	int thoiGianBaoThuc, soLanBaoThuc;

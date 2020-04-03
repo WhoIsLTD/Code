@@ -1,3 +1,4 @@
+package com.ltd.quicknote.ghichu;
 
 public class SuViecDaQua extends GhiChu {
 	String tenNguoiLienQuan, ketQuaSuViec, danhGia;

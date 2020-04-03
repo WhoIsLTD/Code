@@ -1,18 +1,19 @@
+package com.ltd.tthvhcn.tugiac;
 
 public class HinhChuNhat extends TuGiac{
-	double chieuDai, chieuRong;
+	private double chieuDai, chieuRong;
 	@Override
-	void tinhCV() {
+	public void tinhCV() {
 		//tinh gia tri cho chuvi
 		
 	}
 
 	@Override
-	void tinhDT() {
+	public void tinhDT() {
 		// tinh gia tri dien tich
 		
 	}
-	void inTT(){
+	public void inTT(){
 		// in them chiDai, chieuRong
 		super.inTT();
 	}

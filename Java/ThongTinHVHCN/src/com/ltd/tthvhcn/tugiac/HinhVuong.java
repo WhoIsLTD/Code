@@ -1,3 +1,4 @@
+package com.ltd.tthvhcn.tugiac;
 
 public class HinhVuong extends TuGiac {
 	double doDaiCanh;
