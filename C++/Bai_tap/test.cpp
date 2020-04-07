@@ -1,51 +1,33 @@
 #include <iostream>
 using namespace std;
-int dt = 0;
-class Hinh
+class phanso
 {
-protected:
-    int chieuRong, chieuCao;
+private:
+    int ts, ms;
 
 public:
-    Hinh(int a = 0, int b = 0)
-    {
-        chieuRong = a;
-        chieuCao = b;
-    }
-    virtual int dienTich()
-    {
-        cout << " Dien tich cua lop cha: " << endl;
-        return 0;
-    }
+    phanso();
+    phanso(phanso &p);
+    bool operator<(phanso &p);
+    friend ostream &operator<<(ostream &mh, phanso &p);
+    friend istream &operator>>(istream &bp, phanso &p);
 };
-class HinhChuNhat : public Hinh
+phanso::phanso()
 {
-public:
-    HinhChuNhat(int a = 0, int b = 0) : Hinh(a, b) {}
-    int dienTich()
-    {
-        dt = (chieuCao * chieuRong);
-        cout << "Dien tich cua lop HinhChuNhat la: " << dt << endl;
-    }
-};
-class TamGiac : public Hinh
+    ts = 0;
+    ms = 1;
+}
+phanso::phanso(phanso &p)
 {
-public:
-    TamGiac(int a = 0, int b = 0) : Hinh(a, b) {}
-    int dienTich()
-    {
-        dt = (chieuCao * chieuRong) / 2;
-        cout << "Dien tich cua lop TamGiac la: " << dt << endl;
-    }
-};
-int main()
+    ts = p.ts;
+    ms = p.ms;
+}
+bool phanso::operator<(phanso &p)
 {
-    Hinh *hinh;
-    HinhChuNhat hcn(13, 6);
-    TamGiac tag(8, 9);
-    hinh = &hcn;
-    hinh -> dienTich();
-    hinh = &tag;
-    hinh -> dienTich();
-    return 0;
+    return (ts * p.ms < ms * p.ts);
+}
+ostream &operator<<(ostream &mh, phanso &p)
+{
+    mh << p.ts << "/" << p.ms;
+    return mh;
 }
