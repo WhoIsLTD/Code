@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include <iostream>
 using namespace std;
 class phanso
@@ -61,3 +62,6 @@ void print(T *a, int n)
         cout << a[i] << "   ";
     cout << endl;
 }
+=======
+#include <stdio.h>
+>>>>>>> 7fb456cb63f0edd14c87c6095e8567d8e2aae84b
