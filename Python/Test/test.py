@@ -1,11 +1,8 @@
-n = int(input("nhap vao so luong phan tu: "))
-
-list = []
-for i in range (0, n):
-    m = (input("nhap vao a[" + str(i) + "]: "))
-    list.append(m)
-max = list[0]
-for j in range(len(list)):
-    if max < list[j]:
-        max = list[j]
-print('max: ', max)
+def GiaiThua(n):
+    ketQua = 0
+    if n == 0:
+        ketQua = 1
+    else:
+        ketQua = GiaiThua(n -1) * n
+    return(ketQua)
+print(GiaiThua(1))

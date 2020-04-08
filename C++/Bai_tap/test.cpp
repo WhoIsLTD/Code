@@ -46,7 +46,8 @@ void swap(T &a, T &b)
     a = b;
     b = tg;
 }
-template <class T> void sort(T *a, int n)
+template <class T>
+void sort(T *a, int n)
 {
     for (int i = 0; i < n - 1; i++)
         for (int j = i + 1; j < n; j++)
