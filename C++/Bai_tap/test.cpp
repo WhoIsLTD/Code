@@ -42,18 +42,14 @@ istream &operator>>(istream &bp, phanso &p)
 template <class T>
 void Swap(T &a, T &b)
 {
-    T tg;
-    tg = a;
-    a = b;
-    b = tg;
+    T s;
+    s = a + b;
 }
 template <class T>
 void sort(T *a, int n)
 {
     for (int i = 0; i < n - 1; i++)
-        for (int j = i + 1; j < n; j++)
-            if (a[i] < a[j])
-                Swap(a[i], a[j]);
+        Swap(a[i]);
 }
 template <class T>
 void print(T *a, int n)
