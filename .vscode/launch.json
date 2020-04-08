@@ -16,6 +16,20 @@
             "name": "CodeLens (Launch) - SinhVien",
             "request": "launch",
             "mainClass": "SinhVien",
+            "projectName": "Bai_tap"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - bai3",
+            "request": "launch",
+            "mainClass": "bai3",
+            "projectName": "Bai_tap"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SinhVien",
+            "request": "launch",
+            "mainClass": "SinhVien",
             "projectName": "HelloWorld"
         },
         {
