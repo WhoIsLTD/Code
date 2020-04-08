@@ -28,7 +28,10 @@ bool phanso::operator>(phanso &p)
 }
 ostream &operator<<(ostream &mh, phanso &p)
 {
-    mh << p.ts << "/" << p.ms;
+    if(p.ms != 1)
+        mh << p.ts << "/" << p.ms;
+    else
+        mh << p.ts;
     return mh;
 }
 istream &operator>>(istream &bp, phanso &p)
@@ -47,8 +50,7 @@ void sort(T *a, int n)
         for (int j = i + 1; j < n; j++)
             if (a[i] > a[j])
             {
-                T tg;
-                tg = a[i];
+                T tg = a[i];
                 a[i] = a[j];
                 a[j] = tg;
             }
