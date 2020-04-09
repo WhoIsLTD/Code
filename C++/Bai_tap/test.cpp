@@ -1,14 +1,11 @@
 #include<iostream>
 using namespace std;
 
-struct Node
-{
-    DataType data;
-    Node *pNext;
-};
+
 struct Stack
 {
-    Node *top;
+    int list[100];
+    int top;
 };
 void Init(Stack &t)
 {
@@ -16,38 +13,47 @@ void Init(Stack &t)
 }
 int isEmpty (Stack t)
 {
-    return t.top == NULL
+    return t.top == NULL;
 }
-void Push (Stack &t, DataType x)
+int isFull (Stack t)
 {
-    Node *p = new Node;
-    if (p == NULL )
+    return t.top >= 100;
+}
+void Push (Stack &t, int x)
+{
+    if (!isFull(t))
     {
-        cout <<"khong du bo nho";
-        return;
+        t.list[t.top] = x;
+        t.top++;
     }
-    p->data;
-    p->pNext = NULL;
-    if(t.top == NULL)
-        t.top = p;
-    else
+}
+    int Pop (Stack &t)
     {
-        p->pNext = t.top;
-        t.top = p;
-    }
-    DataType Pop (Stack &t)
-    {
-        if (t.top == NULL)
+        int x;
+        if (!isEmpty(t))
         {
-            cout << "Stack rong";
-            reutrn 0;
+            t.top--;
+            x = t.list[t.top];
         }
-        DataType x;
-        Node *p = t.top;
-        t.top = t.top->pNext;
-        x = p->data;
-        delete p;
         return x;
     }
-    
+int main()
+{
+    Stack t;
+    int coso, so, sodu;
+    Init(t);
+    cout << "nhap so can chyen vao bien so: "<< endl;
+    cin >> so;
+    cout << "nhap so can chuyen vao bien cow so: " << endl;
+    cin >> coso;
+    while (so != 0)
+    {
+        sodu = so % coso;
+        Push(t, sodu);
+        so = so/coso;
+    }
+cout << "ket qua: ";
+while (!isEmpty(t))
+    cout << Pop(t);
+
 }
