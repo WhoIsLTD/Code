@@ -1,9 +1,9 @@
 package com.ltd.quicknote.ghichu;
 
 public class SuViecSapToi extends GhiChu {
-	int thoiGianBaoThuc, soLanBaoThuc;
-	String amThanhBaoThuc;
-	boolean xacNhanThamGia;
+	private int thoiGianBaoThuc, soLanBaoThuc;
+	private String amThanhBaoThuc;
+	private boolean xacNhanThamGia;
 
 	void nhapGT(String gTriMa, String gTriTieuDe, String gTriNoiDung, String gTriThoiGian, String gTriDiaDiem,
 			String gTrithoiGianBaoThuc, int gTrisoLanBaoThuc, String gTriamThanhBaoThuc) {

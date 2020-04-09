@@ -1,9 +1,9 @@
 package com.ltd.quicknote.ghichu;
 
 public class GhiChu {
-	String ma, TieuDe, NoiDung, ThoiGian, DiaDiem;
+	protected String ma, TieuDe, NoiDung, ThoiGian, DiaDiem;
 
-	void nhapGT(String gTriMa, String gTriTieuDe, String gTriNoiDung, String gTriThoiGian, String gTriDiaDiem) {
+	public void nhapGT(String gTriMa, String gTriTieuDe, String gTriNoiDung, String gTriThoiGian, String gTriDiaDiem) {
 //nhap giatri
 	}
 

@@ -3,14 +3,16 @@ package com.ltd.tthvhcn.tugiac;
 import com.ltd.tthvhcn.dinh.Dinh;
 
 public abstract class TuGiac {
-	Dinh d1, d2, d3, d4;
-	double chuVi, dienTich;
+	protected Dinh d1, d2, d3, d4;
+	protected double chuVi, dienTich;
 	
-	void nhapGT(Dinh gTriD1, Dinh gTriD2, Dinh gTriD3, Dinh gTriD4) {
+	public void nhapGT(Dinh gTriD1, Dinh gTriD2, Dinh gTriD3, Dinh gTriD4) {
 		// gan gtri d1, d2, d3, d4
 	}
 	abstract void tinhCV();
+	
 	abstract void tinhDT();
+	
 	void inTT() {
 		d1.inTT();
 		d2.inTT();

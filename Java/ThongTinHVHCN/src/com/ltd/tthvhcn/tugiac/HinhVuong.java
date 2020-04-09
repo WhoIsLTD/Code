@@ -1,19 +1,19 @@
 package com.ltd.tthvhcn.tugiac;
 
 public class HinhVuong extends TuGiac {
-	double doDaiCanh;
+	private double doDaiCanh;
 	@Override
-	void tinhCV() {
+	public void tinhCV() {
 		//tinh gia tri cho chuvi
 		
 	}
 
 	@Override
-	void tinhDT() {
+	public void tinhDT() {
 		// tinh dien tich
 		
 	}
-	void inTT(){
+	public void inTT(){
 		
 		super.inTT();
 	}
