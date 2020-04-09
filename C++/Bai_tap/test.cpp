@@ -1,67 +1,53 @@
-<<<<<<< HEAD
-#include <iostream>
+#include<iostream>
 using namespace std;
-class phanso
-{
-private:
-    int ts, ms;
 
-public:
-    phanso();
-    phanso(phanso &p);
-    bool operator<(phanso &p);
-    friend ostream &operator<<(ostream &mh, phanso &p);
-    friend istream &operator>>(istream &bp, phanso &p);
+struct Node
+{
+    DataType data;
+    Node *pNext;
 };
-phanso::phanso()
+struct Stack
 {
-    ts = 0;
-    ms = 1;
-}
-phanso::phanso(phanso &p)
+    Node *top;
+};
+void Init(Stack &t)
 {
-    ts = p.ts;
-    ms = p.ms;
+    t.top = NULL;
 }
-bool phanso::operator<(phanso &p)
+int isEmpty (Stack t)
 {
-    return (ts * p.ms < ms * p.ts);
+    return t.top == NULL
 }
-ostream &operator<<(ostream &mh, phanso &p)
+void Push (Stack &t, DataType x)
 {
-    mh << p.ts << "/" << p.ms;
-    return mh;
+    Node *p = new Node;
+    if (p == NULL )
+    {
+        cout <<"khong du bo nho";
+        return;
+    }
+    p->data;
+    p->pNext = NULL;
+    if(t.top == NULL)
+        t.top = p;
+    else
+    {
+        p->pNext = t.top;
+        t.top = p;
+    }
+    DataType Pop (Stack &t)
+    {
+        if (t.top == NULL)
+        {
+            cout << "Stack rong";
+            reutrn 0;
+        }
+        DataType x;
+        Node *p = t.top;
+        t.top = t.top->pNext;
+        x = p->data;
+        delete p;
+        return x;
+    }
+    
 }
-istream &operator>>(istream &bp, phanso &p)
-{
-    cout << " Nhaptu so:";
-    bp >> p.ts;
-    cout << " Nhapmauso:";
-    bp >> p.ms;
-}
-template <class T>
-void swap(T &a, T &b)
-{
-    T tg;
-    tg = a;
-    a = b;
-    b = tg;
-}
-template <class T>
-void sort(T *a, int n)
-{
-    for (int i = 0; i < n - 1; i++)
-        for (int j = i + 1; j < n; j++)
-            if (a[i] < a[j])
-                swap(a[i], a[j]);
-}
-template <class T>
-void print(T *a, int n)
-{
-    for (int i = 0; i < n; i++)
-        cout << a[i] << "   ";
-    cout << endl;
-}
-=======
-#include <stdio.h>
->>>>>>> 7fb456cb63f0edd14c87c6095e8567d8e2aae84b
