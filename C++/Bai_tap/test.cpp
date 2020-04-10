@@ -42,9 +42,9 @@ int main()
     Stack t;
     int coso, so, sodu;
     Init(t);
-    cout << "nhap so can chyen vao bien so: "<< endl;
+    cout << "nhap so can chuyen vao bien so: "<< endl;
     cin >> so;
-    cout << "nhap so can chuyen vao bien cow so: " << endl;
+    cout << "nhap so can chuyen vao bien co so: " << endl;
     cin >> coso;
     while (so != 0)
     {

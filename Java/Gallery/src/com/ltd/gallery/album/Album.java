@@ -1,3 +1,4 @@
+package com.ltd.gallery.album;
 
 public class Album {
 	String tenAlbum, maAlbum, ngayTao, danhSachMedia;
