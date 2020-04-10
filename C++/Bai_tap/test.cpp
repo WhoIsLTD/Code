@@ -1,10 +1,9 @@
 #include<iostream>
 using namespace std;
-
-
+template <class T>
 struct Stack
 {
-    int list[100];
+    T list[100];
     int top;
 };
 void Init(Stack &t)
@@ -19,7 +18,8 @@ int isFull (Stack t)
 {
     return t.top >= 100;
 }
-void Push (Stack &t, int x)
+template <class T>
+void Push (Stack &t, T x)
 {
     if (!isFull(t))
     {
@@ -27,9 +27,10 @@ void Push (Stack &t, int x)
         t.top++;
     }
 }
-    int Pop (Stack &t)
+template <class T>
+    T Pop (Stack &t)
     {
-        int x;
+        T x;
         if (!isEmpty(t))
         {
             t.top--;
