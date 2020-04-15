@@ -1,70 +1,20 @@
-#include<iostream>
-using namespace std;
-template <class T>
-class Stack
-{
-    T list[100];
-    int top;
-public:
-    void Init(T a);
+char *digitChar= “0123456789ABCDEF”;
+char d = digitChar[13]; // 1310= D16
+char f = digitChar[15]; // 1310= F16
 
-    int isEmpty();
-    int isFull();
-    void Push(T x);
-    T Pop();
-};
-template <class T>
-void Stack<T> ::Init(T a)
-{
-    top = NULL;
+void DoiCoSo(int n,int b) {
+char*digitChar= "0123456789ABCDEF";
+//Tạo một stack lưu trữ kết quả
+IntStack *stack = CreateStack(MAX);
+do{
+//Tính chữ số bên phải nhất,đẩy vào stack
+PushStack(stack, n% b);
+n/= b; //Thay n = n/b để tính tiếp
+} while(n!= 0); //Lặp đến khi n = 0
+while( !IsEmptyStack(stack) ){
+// Rút lần lượt từng phần tửcủa stack
+PopStack(stack, &n);
+// chuyển sang dạng ký tự và in kết quả
+printf(“%c”, digitChar[n]);
 }
-template <class T>
-int Stack<T> ::isEmpty ()
-{
-    return top == NULL;
-}
-template <class T>
-int Stack<T> ::isFull ()
-{
-    return top >= 100;
-}
-template <class T>
-void Stack<T> ::Push (T x)
-{
-    if (!isFull())
-    {
-        list[top] = x;
-        top++;
-    }
-}
-template <class T>
-    T Stack<T>:: Pop ()
-    {
-        T x;
-        if (!isEmpty())
-        {
-            top--;
-            x = list[top];
-        }
-        return x;
-    }
-int main()
-{
-    Stack<int> list;
-    int coso, so, sodu;
-    // Init(list);
-    cout << "nhap so can chyen vao bien so: "<< endl;
-    cin >> so;
-    cout << "nhap so can chuyen vao bien cow so: " << endl;
-    cin >> coso;
-    while (so != 0)
-    {
-        sodu = so % coso;
-        list.Push(sodu);
-        so = so/coso;
-    }
-cout << "ket qua: ";
-while (!list.isEmpty())
-    cout << list.Pop();
-
 }

@@ -1,25 +1,23 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-template <class T>
 struct Stack
 {
-    T list[100];
+    int list[100];
     int top;
 };
 void Init(Stack &t)
 {
     t.top = NULL;
 }
-int isEmpty (Stack t)
+int isEmpty(Stack t)
 {
     return t.top == NULL;
 }
-int isFull (Stack t)
+int isFull(Stack t)
 {
     return t.top >= 100;
 }
-template <class T>
-void Push (Stack &t, T x)
+void Push(Stack &t, int x)
 {
     if (!isFull(t))
     {
@@ -27,34 +25,61 @@ void Push (Stack &t, T x)
         t.top++;
     }
 }
-template <class T>
-    T Pop (Stack &t)
+int Pop(Stack &t)
+{
+    int x;
+    if (!isEmpty(t))
     {
-        T x;
-        if (!isEmpty(t))
-        {
-            t.top--;
-            x = t.list[t.top];
-        }
-        return x;
+        t.top--;
+        x = t.list[t.top];
     }
+    return x;
+}
+void uoc(Stack &s, int n)
+{
+    int i;
+    Init(s);
+    for (i = 1; i <= n; i++)
+        if (n % i == 0)
+            Push(s, i);
+    while (!isEmpty(s))
+    {
+        cout << Pop(s);
+        cout << "\t";
+    }
+}
+void Chuso(Stack &p, int n)
+{
+    int c;
+    Init(p);
+    while (n != 0)
+    {
+        c = n % 10;
+        Push(p, c);
+        n = n / 10;
+    }
+}
+void Reverse(Stack &p, Stack &m)
+{
+    Init(m);
+    int x;
+    while (!isEmpty(p))
+    {
+        x = Pop(p);
+        Push(m, x);
+    }
+    while (!isEmpty(m))
+        cout << Pop(m);
+}
 int main()
 {
-    Stack t;
-    int coso, so, sodu;
-    Init(t);
-    cout << "nhap so can chuyen vao bien so: "<< endl;
-    cin >> so;
-    cout << "nhap so can chuyen vao bien co so: " << endl;
-    cin >> coso;
-    while (so != 0)
-    {
-        sodu = so % coso;
-        Push(t, sodu);
-        so = so/coso;
-    }
-cout << "ket qua: ";
-while (!isEmpty(t))
-    cout << Pop(t);
-
+    Stack t, s, p, m;
+    int n;
+    cout << "nhap vao so nguyen n:" << endl;
+    cin >> n;
+    cout << "cac uoc cua n la:" << endl;
+    uoc(s, n);
+    cout << "\nSo nghich dao cua n la: " << endl;
+    Chuso(p, n);
+    Reverse(p, m);
 }
