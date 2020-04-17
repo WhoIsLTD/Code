@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.ltd.truyencuoi.truyen.ChuDe"/>
+    <fullyQualifiedTypeName name="jdk.internal.jline.internal.ShutdownHooks.Task"/>
+    <fullyQualifiedTypeName name="com.ltd.todolist.task.Task"/>
+    <fullyQualifiedTypeName name="com.ltd.GiaCam.GiaCam.GiaCam"/>
+    <fullyQualifiedTypeName name="com.ltd.GiaCam.GiaCam.Ga"/>
+    <fullyQualifiedTypeName name="com.ltd.GiaCam.GiaCam.Vit"/>
 </qualifiedTypeNameHistroy>
