@@ -6,13 +6,21 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="Ga"/>
+		<item key="selection" value="phone"/>
 		<list key="findhistory">
+			<item value="setPhone"/>
+			<item value="setName"/>
+			<item value="name"/>
+			<item value="Phone"/>
 			<item value="Ga"/>
 			<item value="truyen"/>
 			<item value="Student"/>
 		</list>
 		<list key="replacehistory">
+			<item value="phone"/>
+			<item value="name"/>
+			<item value=""/>
+			<item value="Contact"/>
 			<item value="Vit"/>
 			<item value="task"/>
 			<item value="Sinhvien"/>
