@@ -9,7 +9,11 @@
     <fullyQualifiedTypeName name="com.ltd.QuanLySinhVien.Student.Student"/>
     <fullyQualifiedTypeName name="com.ltd.DanhBa.Contact.Contact"/>
     <fullyQualifiedTypeName name="com.ltd.DanhBa.Contact.ContactsManager"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="com.ltd.vehicle.Vehicle.Vehicle"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.ltd.TinhTuoi.Tuoi.TinhTuoi"/>
+    <fullyQualifiedTypeName name="com.ltd.TinhTuoi.TinhTuoi"/>
 </qualifiedTypeNameHistroy>

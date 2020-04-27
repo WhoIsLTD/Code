@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="phone"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="static"/>
 			<item value="setPhone"/>
 			<item value="setName"/>
 			<item value="name"/>
@@ -17,9 +18,9 @@
 			<item value="Student"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
 			<item value="phone"/>
 			<item value="name"/>
-			<item value=""/>
 			<item value="Contact"/>
 			<item value="Vit"/>
 			<item value="task"/>
