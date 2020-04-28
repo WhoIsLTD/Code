@@ -1,3 +1,33 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="/home/ltd/Code/Java"/>
+			<item value="/home/mr-kindess/Code/Java"/>
+			<item value="E:\Code\Java"/>
+			<item value="E:\Git\Code\Java\Bai_tap"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item key="DIALOG_X_ORIGIN" value="220"/>
+		<item key="DIALOG_Y_ORIGIN" value="254"/>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+			<item value="org.eclipse.ui.preferences"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+	</section>
+	<section name="org.eclipse.ui.internal.views.markers.FiltersConfigurationDialog">
+	</section>
+</section>
+=======
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="SmartImportWizard">
@@ -33,3 +63,4 @@
 		<item key="TOGGLE_SELECTED" value="false"/>
 	</section>
 </section>
+>>>>>>> 795ee1c1c4bb020c0982d26d0cefe885957b6b74

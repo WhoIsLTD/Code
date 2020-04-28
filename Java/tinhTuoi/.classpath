@@ -1,3 +1,24 @@
+<<<<<<< HEAD
+<<<<<<<< HEAD:Java/tinhTuoi/.classpath
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
+========
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
+>>>>>>>> 795ee1c1c4bb020c0982d26d0cefe885957b6b74:Java/nocmtt/.classpath
+=======
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-11">
@@ -8,3 +29,4 @@
 	<classpathentry excluding="com/ltd/TinhTuoi/Main/|com/ltd/TinhTuoi/Tuoi/" kind="src" path="src"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
+>>>>>>> 795ee1c1c4bb020c0982d26d0cefe885957b6b74

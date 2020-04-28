@@ -3,6 +3,13 @@
 >>>>>>>=4c7db3224812987ef309ee271d71878cfdd81e12
 eclipse.preferences.version=1
 org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<launchPerspectives/>\n
+<<<<<<< HEAD
+=======
 pref_state_memento.org.eclipse.debug.ui.DebugVieworg.eclipse.debug.ui.DebugView=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<DebugViewMemento org.eclipse.debug.ui.BREADCRUMB_DROPDOWN_AUTO_EXPAND\="false"/>
+<<<<<<< HEAD
 preferredDetailPanes=DefaultDetailPane,org.eclipse.jdt.debug.ui.JAVA_VARIABLE_DETAIL_PANE_VARIABLES\:org.eclipse.jdt.debug.ui.JAVA_VARIABLE_DETAIL_PANE_VARIABLES|DefaultDetailPane\:DefaultDetailPane|
+=======
+preferredDetailPanes=DefaultDetailPane\:DefaultDetailPane|
+>>>>>>> 795ee1c1c4bb020c0982d26d0cefe885957b6b74
+>>>>>>> e3823b9fc6a2a83bd22d53498ea1b05c05885373
 preferredTargets=default\:default|
