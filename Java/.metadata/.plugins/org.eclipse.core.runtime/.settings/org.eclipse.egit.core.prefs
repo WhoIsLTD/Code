@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 GitRepositoriesView.GitDirectories=/home/ltd/Code/.git\:
 GitRepositoriesView.GitDirectories.relative=/home/ltd/Code/.git\:
+=======
+GitRepositoriesView.GitDirectories=/media/E\:/Code/Java/\\Code\\.git;\:/media/E\:/Code/Java/E\:/home/mr-kindess/Code/.git\:/media/E\:/Code/.git\:
+GitRepositoriesView.GitDirectories.relative=\\Code\\.git;\:E\:/home/mr-kindess/Code/.git\:/media/E\:/Code/.git\:
+>>>>>>> 795ee1c1c4bb020c0982d26d0cefe885957b6b74
 eclipse.preferences.version=1

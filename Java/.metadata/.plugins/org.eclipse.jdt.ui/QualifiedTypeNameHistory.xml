@@ -6,5 +6,18 @@
     <fullyQualifiedTypeName name="com.ltd.GiaCam.GiaCam.GiaCam"/>
     <fullyQualifiedTypeName name="com.ltd.GiaCam.GiaCam.Ga"/>
     <fullyQualifiedTypeName name="com.ltd.GiaCam.GiaCam.Vit"/>
+<<<<<<< HEAD
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+=======
+    <fullyQualifiedTypeName name="com.ltd.QuanLySinhVien.Student.Student"/>
+    <fullyQualifiedTypeName name="com.ltd.DanhBa.Contact.Contact"/>
+    <fullyQualifiedTypeName name="com.ltd.DanhBa.Contact.ContactsManager"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="com.ltd.vehicle.Vehicle.Vehicle"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.ltd.TinhTuoi.Tuoi.TinhTuoi"/>
+    <fullyQualifiedTypeName name="com.ltd.TinhTuoi.TinhTuoi"/>
+>>>>>>> 795ee1c1c4bb020c0982d26d0cefe885957b6b74
 </qualifiedTypeNameHistroy>

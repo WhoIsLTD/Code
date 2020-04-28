@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.131+/home/ltd/Code/Java/.metadata/.plugins/org.eclipse.jdt.core
 3603316055.index
 4200075832.index
@@ -10,3 +11,21 @@ INDEX VERSION 1.131+/home/ltd/Code/Java/.metadata/.plugins/org.eclipse.jdt.core
 3703194086.index
 3927879410.index
 3600220668.index
+=======
+INDEX VERSION 1.131+/media/E:/Code/Java/.metadata/.plugins/org.eclipse.jdt.core
+2124201861.index
+4272073129.index
+1351496011.index
+93757571.index
+3927879410.index
+3961668162.index
+4056278637.index
+1009557816.index
+977914040.index
+3600220668.index
+2621791519.index
+3603316055.index
+203795959.index
+4200075832.index
+646308851.index
+>>>>>>> 795ee1c1c4bb020c0982d26d0cefe885957b6b74
