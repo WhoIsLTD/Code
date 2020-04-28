@@ -1,11 +1,8 @@
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
->>>>>>>=4c7db3224812987ef309ee271d71878cfdd81e12
+>>>>>>>=795ee1c1c4bb020c0982d26d0cefe885957b6b74
 eclipse.preferences.version=1
 org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<launchPerspectives/>\n
-<<<<<<< HEAD
-=======
 pref_state_memento.org.eclipse.debug.ui.DebugVieworg.eclipse.debug.ui.DebugView=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<DebugViewMemento org.eclipse.debug.ui.BREADCRUMB_DROPDOWN_AUTO_EXPAND\="false"/>
 preferredDetailPanes=DefaultDetailPane\:DefaultDetailPane|
->>>>>>> 795ee1c1c4bb020c0982d26d0cefe885957b6b74
 preferredTargets=default\:default|
