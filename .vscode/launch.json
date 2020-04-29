@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "ThongTinHVHCN"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - bai3",
             "request": "launch",
             "mainClass": "bai3",
