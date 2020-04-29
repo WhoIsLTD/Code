@@ -8,13 +8,13 @@ private:
     int ts, ms;
 
 public:
-    phanso Nhap();
+    void Nhap();
     phanso In();
     void Toi_Gian();
     int operator<(phanso a);
 };
 //phuong thuc nhap
-phanso phanso ::Nhap()
+void phanso ::Nhap()
 {
     cout << "Nhap tu so: " << endl;
     cin >> ts;
