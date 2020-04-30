@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 INDEX VERSION 1.131+E:\Code\Java\.metadata\.plugins\org.eclipse.jdt.core
 1103468457.index
 313987158.index
-532283116.index
 2573376859.index
+852993850.index
 904809663.index
 2380175872.index
 4079665386.index
@@ -15,36 +14,3 @@ INDEX VERSION 1.131+E:\Code\Java\.metadata\.plugins\org.eclipse.jdt.core
 4049370329.index
 1917953848.index
 559062947.index
-=======
-<<<<<<< HEAD
-INDEX VERSION 1.131+/home/ltd/Code/Java/.metadata/.plugins/org.eclipse.jdt.core
-3603316055.index
-4200075832.index
-646308851.index
-4272073129.index
-2621791519.index
-757069474.index
-1351496011.index
-3961668162.index
-3703194086.index
-3927879410.index
-3600220668.index
-=======
-INDEX VERSION 1.131+/media/E:/Code/Java/.metadata/.plugins/org.eclipse.jdt.core
-2124201861.index
-4272073129.index
-1351496011.index
-93757571.index
-3927879410.index
-3961668162.index
-4056278637.index
-1009557816.index
-977914040.index
-3600220668.index
-2621791519.index
-3603316055.index
-203795959.index
-4200075832.index
-646308851.index
->>>>>>> 795ee1c1c4bb020c0982d26d0cefe885957b6b74
->>>>>>> e3823b9fc6a2a83bd22d53498ea1b05c05885373
