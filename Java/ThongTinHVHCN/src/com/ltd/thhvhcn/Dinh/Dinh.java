@@ -14,13 +14,14 @@ public class Dinh {
 		return y;
 	}
 
-	public void nhapGT(double gTriX, double gTriY) {
-		x = gTriX;
-		y = gTriY;
-//		System.out.println("Nhap vao gia tri x: ");
-//		x = sc.nextInt();
-//		System.out.println("Nhap vao gia tri y: ");
-//		y = sc.nextInt();
+	public void nhapGT() {
+//		x = gTriX;
+//		y = gTriY;
+//		double gTriX, double gTriY
+		System.out.println("Nhap vao gia tri x: ");
+		x = sc.nextInt();
+		System.out.println("Nhap vao gia tri y: ");
+		y = sc.nextInt();
 	}
 
 	public void inTT() {
