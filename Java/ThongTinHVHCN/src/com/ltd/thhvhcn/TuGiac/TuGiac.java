@@ -6,12 +6,12 @@ public abstract class TuGiac {
 	protected Dinh d1, d2, d3, d4;
 	protected double chuVi, dienTich;
 	
-	public void nhapGT(Dinh gTriD1, Dinh gTriD2, Dinh gTriD3, Dinh gTriD4) {
-		d1 = gTriD1;
-		d2 = gTriD2;
-		d3 = gTriD3;
-		d4 = gTriD4;
-		//
+	public void nhapGT() {
+		d1.nhapGT();
+		d2.nhapGT();
+		d3.nhapGT();
+		d4.nhapGT();
+		//Dinh gTriD1, Dinh gTriD2, Dinh gTriD3, Dinh gTriD4
 	}
 	public abstract void tinhCV();
 	

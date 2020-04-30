@@ -1,33 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<<<<<<< HEAD
-<qualifiedTypeNameHistroy/>
-=======
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="com.ltd.truyencuoi.truyen.ChuDe"/>
-    <fullyQualifiedTypeName name="jdk.internal.jline.internal.ShutdownHooks.Task"/>
-    <fullyQualifiedTypeName name="com.ltd.todolist.task.Task"/>
-    <fullyQualifiedTypeName name="com.ltd.GiaCam.GiaCam.GiaCam"/>
-    <fullyQualifiedTypeName name="com.ltd.GiaCam.GiaCam.Ga"/>
-    <fullyQualifiedTypeName name="com.ltd.GiaCam.GiaCam.Vit"/>
-<<<<<<< HEAD
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-=======
-    <fullyQualifiedTypeName name="com.ltd.QuanLySinhVien.Student.Student"/>
-    <fullyQualifiedTypeName name="com.ltd.DanhBa.Contact.Contact"/>
-    <fullyQualifiedTypeName name="com.ltd.DanhBa.Contact.ContactsManager"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
-    <fullyQualifiedTypeName name="com.ltd.vehicle.Vehicle.Vehicle"/>
-    <fullyQualifiedTypeName name="com.ltd.TinhTuoi.Tuoi.TinhTuoi"/>
-    <fullyQualifiedTypeName name="com.ltd.TinhTuoi.TinhTuoi"/>
-<<<<<<< HEAD
-    <fullyQualifiedTypeName name="com.ltd.ChuSo.Main.Main"/>
-    <fullyQualifiedTypeName name="com.ltd.ChuSo.ChuSo"/>
-    <fullyQualifiedTypeName name="org.graalvm.compiler.core.common.type.ArithmeticOpTable.UnaryOp.Sqrt"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
-=======
->>>>>>> 795ee1c1c4bb020c0982d26d0cefe885957b6b74
->>>>>>> e3823b9fc6a2a83bd22d53498ea1b05c05885373
+    <fullyQualifiedTypeName name="com.ltd.thhvhcn.TuGiac.HinhChuNhat"/>
+    <fullyQualifiedTypeName name="com.ltd.thhvhcn.Dinh.Dinh"/>
 </qualifiedTypeNameHistroy>
->>>>>>> 388460463fae30a5adb52148750ec51a246e8726
