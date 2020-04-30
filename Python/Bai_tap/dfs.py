@@ -1,4 +1,5 @@
-map = {
+
+graph = {
     'A': ['B', 'C'],
     'B': ['D', 'E'],
     'C': ['F'],
@@ -6,17 +7,27 @@ map = {
     'E': ['F'],
     'F': []
 }
-danhSachDaDuyet = []
-duongDi = []
+
+s = []
+path = []
 
 
-def duyet(map, ds, dau, ketThuc):
-    ds = ds + [dau]
-    print(ds)
-    if(dau == ketThuc):
-        yield ds
-    for i in map[dau]:
-        duyet(map, ds, i, ketThuc)
+def dfs(graph, s, key):
+    if(key not in s):
+        s.append(key)
+    for i in graph[key]:
+        dfs(graph, s, i)
 
 
-print(list(duyet(map, danhSachDaDuyet, 'A', 'F')))
+dfs(graph, s, 'A')
+print(s)
+
+
+def dfs_paths(graph, start, goal, path):
+    if path == []:
+        path = [start]
+    if start == goal:
+        yield path
+    for next in graph[start]:
+        yield from dfs_paths(graph, next, goal, path+[next])
+print(list(dfs_paths(graph, 'A', 'F', path)))

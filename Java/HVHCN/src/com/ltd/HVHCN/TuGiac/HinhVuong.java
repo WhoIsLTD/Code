@@ -1,4 +1,4 @@
-package com.ltd.thhvhcn.TuGiac;
+package com.ltd.HVHCN.TuGiac;
 
 public class HinhVuong extends TuGiac {
 	private double doDaiCanh;
@@ -21,6 +21,7 @@ public class HinhVuong extends TuGiac {
 
 	public void inTT() {
 		System.out.println("Do dai canh: " + doDaiCanh);
+		System.out.println("Chu vi: " + chuVi + "\nDien tich: " + dienTich);
 		super.inTT();
 	}
 }

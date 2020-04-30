@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TuGiac$Main",
+            "request": "launch",
+            "mainClass": "com.ltd.thhvhcn.TuGiac.TuGiac$Main",
+            "projectName": "ThongTinHVHCN"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TuGiac",
+            "request": "launch",
+            "mainClass": "com.ltd.thhvhcn.TuGiac.TuGiac",
+            "projectName": "ThongTinHVHCN"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "com.ltd.thhvhcn.Main.Main",
+            "projectName": "ThongTinHVHCN"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Main",
             "request": "launch",
             "mainClass": "Main",
