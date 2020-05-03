@@ -1,12 +1,11 @@
-package com.ltd.TinhTuoi.main;
+package com.ltd.tinhTuoi.main;
 
-import com.ltd.TinhTuoi.TinhTuoi;
-
+import java.util.Scanner;
+import com.ltd.tinhTuoi.tinhTuoi.*;
 public class Main {
 	public static void main(String[] args) {
-		TinhTuoi tuoi = new TinhTuoi();
-		tuoi.nhapTT();
-		tuoi.inTT();
-
+		Scanner sc = new Scanner(System.in);
+		System.out.println("nhap vao nam sinh");
+		namSinh = sc.nextInt();
 	}
 }
