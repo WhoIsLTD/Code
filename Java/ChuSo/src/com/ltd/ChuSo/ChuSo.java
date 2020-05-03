@@ -6,10 +6,12 @@ public class ChuSo {
 	int n, i, s;
 	Scanner sc = new Scanner(System.in);
 
-	public void nhapGT() {
-		System.out.println("Nhap vao so nguyen: ");
-		n = sc.nextInt();
+	
+
+	public ChuSo(int n) {
+		this.n = n;
 	}
+	
 
 	public void tinhTongChuSo() {
 		while (n > 0) {

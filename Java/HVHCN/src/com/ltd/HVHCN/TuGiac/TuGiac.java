@@ -4,23 +4,21 @@ import com.ltd.HVHCN.Dinh.Dinh;
 
 public abstract class TuGiac {
 	protected Dinh d1, d2, d3, d4;
-	// protected Dinh d1 = new Dinh();
-	// protected Dinh d2 = new Dinh();
-	// protected Dinh d3 = new Dinh();
-	// protected Dinh d4 = new Dinh();
 	protected double chuVi, dienTich;
 
-	public void nhapGT(Dinh gTriD1, Dinh gTriD2, Dinh gTriD3, Dinh gTriD4) {
-		d1 = gTriD1;
-		d2 = gTriD2;
-		d3 = gTriD3;
-		d4 = gTriD4;
-		// 
+
+
+	public TuGiac(Dinh d1, Dinh d2, Dinh d3, Dinh d4) {
+		this.d1 = d1;
+		this.d2 = d2;
+		this.d3 = d3;
+		this.d4 = d4;
 	}
+
 
 	public abstract void tinhCV();
 
-	abstract void tinhDT();
+	public abstract void tinhDT();
 
 	public void inTT() {
 		d1.inTT();

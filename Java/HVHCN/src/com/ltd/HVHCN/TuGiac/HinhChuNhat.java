@@ -1,6 +1,13 @@
 package com.ltd.HVHCN.TuGiac;
 
+import com.ltd.HVHCN.Dinh.Dinh;
+
 public class HinhChuNhat extends TuGiac {
+	public HinhChuNhat(Dinh d1, Dinh d2, Dinh d3, Dinh d4) {
+		super(d1, d2, d3, d4);
+		// TODO Auto-generated constructor stub
+	}
+
 	private double chieuDai, chieuRong;
 
 	public void doDai() {

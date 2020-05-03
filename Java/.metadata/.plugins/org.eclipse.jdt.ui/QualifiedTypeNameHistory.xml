@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.ltd.HVHCN.TuGiac.HinhVuong"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="com.ltd.HVHCN.TuGiac.TuGiac"/>
+    <fullyQualifiedTypeName name="com.ltd.HVHCN.TuGiac.HinhChuNhat"/>
 </qualifiedTypeNameHistroy>
