@@ -10,7 +10,8 @@ def translate(word):
         return data[word.title()]
     else:
         print("Pugger your paw steps on wrong keys")
-    
 word = input("Enter the word you want to search: ")
 output = translate(word)
 print(output)
+
+
