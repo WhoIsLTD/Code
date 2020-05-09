@@ -7,13 +7,18 @@ public class KhachHangVN extends KhachHang {
 
 	public void nhapHD() {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Nhap vao doi tuong khach hang: ");
+		System.out.println("Nhap vao doi tuong khach hang(sh, kd, sx): ");
 		doiTuong = sc.nextLine();
 		super.nhapHD();
 	}
 
 	@Override
-	public void tien() {
-		thanhTien = soLuong * donGia;
+	public double tien() {
+		return setThanhTien(getSoLuong() * donGia);
 	}
+	public void inHD() {
+		System.out.println("Doi tuong khach hang: " + doiTuong);
+		super.inHD();
+	}
+
 }

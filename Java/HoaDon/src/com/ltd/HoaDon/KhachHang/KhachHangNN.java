@@ -10,13 +10,18 @@ public class KhachHangNN extends KhachHang{
 		System.out.println("Nhap vao quoc tich khach hang: ");
 		quocTich = sc.nextLine();
 		System.out.println("nhap vao dinh muc: ");
-		
+		dinhMuc = sc.nextInt();
 		super.nhapHD();
 	}
-
+	public void inHD() {
+		System.out.println("Quoc tich kh: " + quocTich + "Dinh muc: " + dinhMuc);
+		super.inHD();
+	}
 	@Override
-	public void tien() {
-		
-		thanhTien = soLuong * donGia;
+	public double tien() {
+		if (getSoLuong() <= dinhMuc)
+			return setThanhTien(getSoLuong() * donGia);
+		else
+			return setThanhTien(getSoLuong() * donGia * dinhMuc + (getSoLuong() - dinhMuc) * donGia + 2.5);
 	}
 }
