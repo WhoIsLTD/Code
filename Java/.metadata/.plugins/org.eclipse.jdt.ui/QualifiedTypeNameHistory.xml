@@ -4,5 +4,11 @@
     <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="com.ltd.HVHCN.TuGiac.TuGiac"/>
     <fullyQualifiedTypeName name="com.ltd.HVHCN.TuGiac.HinhChuNhat"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.code.Attribute.Array"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.ltd.HoaDon.KhachHang.KhachHangVN"/>
+    <fullyQualifiedTypeName name="com.ltd.HoaDon.KhachHang.KhachHangNN"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.ltd.HoaDon.KhachHang.KhachHang"/>
+    <fullyQualifiedTypeName name="com.ltd.HoaDon.QuanLy.QuanLy"/>
 </qualifiedTypeNameHistroy>
