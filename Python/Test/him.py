@@ -1,1 +1,2 @@
-z
+s = "ffhjh"
+print(s.capitalize())
