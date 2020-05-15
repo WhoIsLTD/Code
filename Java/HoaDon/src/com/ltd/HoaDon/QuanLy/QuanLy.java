@@ -7,21 +7,20 @@ import com.ltd.HoaDon.KhachHang.KhachHangVN;
 
 public class QuanLy {
 
-
-
-		KhachHangVN[] dsKHVN = new KhachHangVN[50];
-		KhachHangNN[] dsKHNN = new KhachHangNN[50];
-		private int countKHVN = 0, countKHNN = 0;
-
+		protected KhachHangVN[] dsKHVN = new KhachHangVN[50];
+		protected KhachHangNN[] dsKHNN = new KhachHangNN[50];
+		protected int countKHVN = 0, countKHNN = 0;
+	
 		Scanner sc = new Scanner(System.in);
 
-		public void themHD(KhachHangVN khvn) {
-			dsKHVN[countKHVN] = khvn;
+		public void themHD(KhachHangVN vn) {
+			dsKHVN[countKHVN] = vn;
 			countKHVN++;
+			System.out.println(countKHVN);
 		}
 
-		public void themHD(KhachHangNN khnn) {
-			dsKHNN[countKHNN] = khnn;
+		public void themHD(KhachHangNN nn) {
+			dsKHNN[countKHNN] =nn;
 			countKHNN++;
 		}
 
@@ -30,22 +29,22 @@ public class QuanLy {
 			String id;
 			System.out.println("nhap vao id can xoa: ");
 			id = sc.nextLine();
-			boolean make = false;
 			for (c = i = 0; i < countKHVN; i++)
 				if (dsKHVN[i].getId() != id) {
 					dsKHVN[c] = dsKHVN[i];
 					c++;
 				}
+			countKHVN = c;
 			for (c = i = 0; i < countKHNN; i++)
 				if (dsKHNN[i].getId() != id) {
 					dsKHNN[c] = dsKHNN[i];
 					c++;
 				}
+			countKHNN = c;
 		}
 
 		public void tinhTong() {
 			int i, s = 0, s1 = 0;
-			String id;
 			for (i = 0; i < countKHVN; i++)
 				s += dsKHVN[i].getSoLuong();
 			for (i = 0; i < countKHNN; i++)
@@ -56,9 +55,11 @@ public class QuanLy {
 
 		public void tbTien() {
 			int i, s = 0;
+			double tb;
 			for (i = 0; i < countKHNN; i++)
 				s += dsKHNN[i].tien();
-			System.out.println("Trung binh thanh tien cua khnn la: " + (s/countKHNN));
+				tb = s/countKHNN;
+			System.out.println("Trung binh thanh tien cua khnn la: " + tb);
 		}
 		public void in2013() {
 			int i, s = 0;

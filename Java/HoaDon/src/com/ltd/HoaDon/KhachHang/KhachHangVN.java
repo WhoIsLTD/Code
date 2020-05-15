@@ -14,7 +14,7 @@ public class KhachHangVN extends KhachHang {
 
 	@Override
 	public double tien() {
-		return setThanhTien(getSoLuong() * donGia);
+		return setThanhTien(getSoLuong() * getDonGia());
 	}
 	public void inHD() {
 		System.out.println("Doi tuong khach hang: " + doiTuong);

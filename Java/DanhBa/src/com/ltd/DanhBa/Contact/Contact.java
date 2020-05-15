@@ -24,6 +24,7 @@ public class Contact extends ContactsManager
 	{
 		myFriends[friendsCount] = contact;
 		friendsCount++;
+		System.out.println(friendsCount);
 	}
 
 	@Override

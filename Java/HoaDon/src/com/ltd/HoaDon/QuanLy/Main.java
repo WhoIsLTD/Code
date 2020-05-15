@@ -1,11 +1,10 @@
-package com.ltd.HoaDon.Main;
+package com.ltd.HoaDon.QuanLy;
 
 import java.util.Scanner;
 
 import com.ltd.HoaDon.KhachHang.KhachHang;
 import com.ltd.HoaDon.KhachHang.KhachHangNN;
 import com.ltd.HoaDon.KhachHang.KhachHangVN;
-import com.ltd.HoaDon.QuanLy.QuanLy;
 
 public class Main {
 
@@ -17,24 +16,26 @@ public class Main {
 
 	public static void main(String[] args) {
 		menu();
+		KhachHangVN[] vn = new KhachHangVN[50];
+		KhachHangNN[] nn = new KhachHangNN[50];
+		QuanLy qly = new QuanLy();
 		int chon, countVN = 0, countNN = 0;
 		Scanner sc = new Scanner(System.in);
 		while (true) {
-			KhachHangVN[] vn = new KhachHangVN[50];
-			KhachHangNN[] nn = new KhachHangNN[50];
-			QuanLy qly = new QuanLy();
+			
 			System.out.println("Chon menu: ");
 			chon = sc.nextInt();
 			switch (chon) {
 			case 1:
 				int loai;
-				System.out.println("Nhap vao loai khach hang (1.KHVN, 2.KHNN");
+				System.out.println("Nhap vao loai khach hang (1.KHVN, 2.KHNN)");
 				loai = sc.nextInt();
 				if (loai == 1) {
 					vn[countVN] = new KhachHangVN();
 					vn[countVN].nhapHD();
 					qly.themHD(vn[countVN]);
 					countVN++;
+					
 				} else {
 					nn[countNN] = new KhachHangNN();
 					nn[countNN].nhapHD();
