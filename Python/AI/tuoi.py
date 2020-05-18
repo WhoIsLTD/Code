@@ -8,6 +8,7 @@ X = np.array([[30, 32.4138, 34.5276, 37.2414, 39.6552]]).T
 y = np.array([[448.524, 509.248, 535.104, 551.432, 623.418]]).T
 # Visualize data 
 plt.plot(X, y, 'ro')
+
 plt.axis([25, 42, 430, 640])
 plt.xlabel('Dien tich (m2)')
 plt.ylabel('Gia ban (trieu VND')
