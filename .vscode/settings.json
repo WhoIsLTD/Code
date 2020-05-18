@@ -6,5 +6,6 @@
         "iosfwd": "cpp",
         "xiosbase": "cpp",
         "xlocale": "cpp"
-    }
+    },
+    "python.pythonPath": "flask\\Scripts\\python.exe"
 }
