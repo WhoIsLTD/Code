@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - file",
+            "request": "launch",
+            "mainClass": "file",
+            "projectName": "Bai_tap"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Matran",
             "request": "launch",
             "mainClass": "Matran",
