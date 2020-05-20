@@ -1,4 +1,4 @@
-package com.ltd.file.matran;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;

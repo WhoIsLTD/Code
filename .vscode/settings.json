@@ -7,5 +7,6 @@
         "xiosbase": "cpp",
         "xlocale": "cpp"
     },
-    "python.pythonPath": "flask\\Scripts\\python.exe"
+    "python.pythonPath": "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+    "git.ignoreLimitWarning": true
 }
