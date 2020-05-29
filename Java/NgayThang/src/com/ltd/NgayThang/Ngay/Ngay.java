@@ -2,6 +2,7 @@ package com.ltd.NgayThang.Ngay;
 
 public class Ngay {
 	private int nam, thang;
+	
 	private String cauTraLoi;
 
 	public Ngay(int nam, int thang) {

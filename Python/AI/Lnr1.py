@@ -9,7 +9,7 @@ y = np.array([[448.524, 509.248, 535.104, 551.432, 623.418]]).T
 # Visualize data 
 plt.plot(X, y, 'ro')
 
-plt.axis([25, 42, 430, 640])
+plt.axis([28, 41, 430, 640])
 plt.xlabel('Dien tich (m2)')
 plt.ylabel('Gia ban (trieu VND')
 plt.show()
@@ -25,13 +25,13 @@ print('w = ', w)
 # Preparing the fitting line 
 w_0 = w[0][0]
 w_1 = w[1][0]
-x0 = np.linspace(32, 38, 2)
+x0 = np.linspace(29, 40, 2)
 y0 = w_0 + w_1*x0
 
 # Drawing the fitting line 
 plt.plot(X.T, y.T, 'ro')     # data 
 plt.plot(x0, y0)               # the fitting line
-plt.axis([25, 42, 430, 640])
+plt.axis([28, 41, 430, 640])
 plt.xlabel('Height (cm)')
 plt.ylabel('Weight (kg)')
 plt.show()
