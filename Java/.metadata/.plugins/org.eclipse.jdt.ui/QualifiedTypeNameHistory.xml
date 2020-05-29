@@ -19,4 +19,8 @@
     <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
     <fullyQualifiedTypeName name="java.io.BufferedReader"/>
     <fullyQualifiedTypeName name="java.io.FileReader"/>
+    <fullyQualifiedTypeName name="com.ltd.ptbII.PhuongTrinhBac2"/>
+    <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
+    <fullyQualifiedTypeName name="com.ltd.ThuanNghichDoc.SoThuanNghich.SoThuanNghich"/>
+    <fullyQualifiedTypeName name="com.ltd.NgayThang.Ngay.Ngay"/>
 </qualifiedTypeNameHistroy>

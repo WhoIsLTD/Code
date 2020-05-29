@@ -1,19 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Kh"/>
+		<item key="selection" value=")"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value=")"/>
+			<item value="System.out.println("/>
 			<item value="kh"/>
 			<item value="ountVN"/>
 			<item value="i"/>
 			<item value="Dinh"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
+			<item value="cauTraLoi = "/>
 			<item value="nn"/>
 			<item value="vn"/>
 			<item value="ountNN"/>
@@ -24,8 +28,8 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="789"/>
 		<item key="DIALOG_Y_ORIGIN" value="231"/>
-		<item key="DIALOG_WIDTH" value="348"/>
-		<item key="DIALOG_HEIGHT" value="437"/>
-		<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>
