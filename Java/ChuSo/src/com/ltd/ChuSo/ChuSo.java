@@ -1,12 +1,7 @@
 package com.ltd.ChuSo;
 
-import java.util.Scanner;
-
 public class ChuSo {
 	int n, i, s;
-	Scanner sc = new Scanner(System.in);
-
-	
 
 	public ChuSo(int n) {
 		this.n = n;

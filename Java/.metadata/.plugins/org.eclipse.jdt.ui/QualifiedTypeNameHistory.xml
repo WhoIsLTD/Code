@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="com.ltd.HVHCN.TuGiac.HinhVuong"/>
-    <fullyQualifiedTypeName name="java.util.Calendar"/>
     <fullyQualifiedTypeName name="com.ltd.HVHCN.TuGiac.TuGiac"/>
     <fullyQualifiedTypeName name="com.ltd.HVHCN.TuGiac.HinhChuNhat"/>
     <fullyQualifiedTypeName name="com.sun.tools.javac.code.Attribute.Array"/>
@@ -22,8 +21,15 @@
     <fullyQualifiedTypeName name="java.text.DecimalFormat"/>
     <fullyQualifiedTypeName name="com.ltd.ThuanNghichDoc.SoThuanNghich.SoThuanNghich"/>
     <fullyQualifiedTypeName name="com.ltd.NgayThang.Ngay.Ngay"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.ltd.Triangle.TinhTamGiac.TinhTamGiac"/>
     <fullyQualifiedTypeName name="com.ltd.PhanSo.PhanSo"/>
     <fullyQualifiedTypeName name="java.lang.Math"/>
+    <fullyQualifiedTypeName name="com.ltd.ThuanNghichDoc.SoThuanNghich.ThuanNghich"/>
+    <fullyQualifiedTypeName name="com.ltd.Number1.Sumber.SumNumber"/>
+    <fullyQualifiedTypeName name="com.ltd.UCLNBCNN.UocBoi.UocBoi"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="com.ltd.TuVi.TuoiNguoi.TuoiNguoi"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.ltd.HVHCN.HinhTron.HinhTron"/>
+    <fullyQualifiedTypeName name="com.ltd.HVHCN.ihinh.IHinh"/>
 </qualifiedTypeNameHistroy>

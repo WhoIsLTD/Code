@@ -3,8 +3,7 @@ using namespace std;
 struct Queue
 {
     int list[100];
-    int front;
-    int rear;
+    int front, rear;
 };
 void Init(Queue &q)
 {
@@ -12,9 +11,8 @@ void Init(Queue &q)
 }
 int isEmpty(Queue q)
 {
-    if ( q.front == q.rear && q.rear == 0)
+    if (q.front == q.rear && q.rear == 0)
         return 1;
-    
     return 0;
 }
 int isFull(Queue q)
@@ -23,76 +21,65 @@ int isFull(Queue q)
         return 1;
     return 0;
 }
-void EnQueue(Queue &q, int x)
+int EnQueue(Queue &q, int x)
 {
-    if (isFull(q))\
+    if (isFull(q))
         return 0;
     q.list[q.rear] = x;
     q.rear++;
-    if (q.rear = ;
+    if (q.rear == 100)
+        q.rear = 0;
+    return 1;
 }
 int DeQueue(Queue &q)
 {
-    int x;
     if (isEmpty(q))
     {
         cout << "Queue rong";
         return 0;
     }
-    X = q.list[q.front]
+    int t = q.list[q.front];
+    q.front++;
+    if (q.front == 100)
+        q.front = 0;
+    return t;
 }
 int Front(Queue q)
 {
     if (isEmpty(q))
     {
-        cout << "Queue rong"
+        cout << "Queue rong";
+        return 0;
     }
+    return q.list[q.front];
 }
-void uoc(Stack &s, int n)
+void tinhTong(Queue q)
 {
-    int i;
-    Init(s);
-    for (i = 1; i <= n; i++)
-        if (n % i == 0)
-            Push(s, i);
-    while (!isEmpty(s))
+    int s = 0, x;
+    while (q.front != q.rear && q.rear != 0)
     {
-        cout << Pop(s);
-        cout << "\t";
+        s += DeQueue(q);
     }
+    cout << s << endl;
 }
-void Chuso(Stack &p, int n)
+int size(Queue q)
 {
-    int c;
-    Init(p);
-    while (n != 0)
+    if (q.rear >= q.front)
+        return (q.rear - q.front);
+    else
     {
-        c = n % 10;
-        Push(p, c);
-        n = n / 10;
+        return 100 - (q.front - q.rear);
     }
-}
-void Reverse(Stack &p, Stack &m)
-{
-    Init(m);
-    int x;
-    while (!isEmpty(p))
-    {
-        x = Pop(p);
-        Push(m, x);
-    }
-    while (!isEmpty(m))
-        cout << Pop(m);
 }
 int main()
 {
-    Stack t, s, p, m;
-    int n;
-    cout << "nhap vao so nguyen n:" << endl;
-    cin >> n;
-    cout << "cac uoc cua n la:" << endl;
-    uoc(s, n);
-    cout << "\nSo nghich dao cua n la: " << endl;
-    Chuso(p, n);
-    Reverse(p, m);
+    Queue t;
+    Init(t);
+    EnQueue(t, 5);
+    EnQueue(t, 4);
+    EnQueue(t, 6);
+    EnQueue(t, 7);
+    cout << size(t) << endl;
+    // cout << Front(t) << endl;
+    tinhTong(t);
 }

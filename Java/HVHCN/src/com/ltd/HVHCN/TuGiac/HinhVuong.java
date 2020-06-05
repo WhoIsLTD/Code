@@ -14,21 +14,21 @@ public class HinhVuong extends TuGiac {
 		doDaiCanh = Math.sqrt(Math.pow(d1.getY() - d1.getX(), 2) + Math.pow(d2.getY() - d2.getX(), 2));
 	}
 
-	@Override
-	public void tinhCV() {
-		chuVi = doDaiCanh * 4;
-
-	}
-
-	@Override
-	public void tinhDT() {
-		dienTich = doDaiCanh * doDaiCanh;
-
-	}
-
 	public void inTT() {
 		System.out.println("Do dai canh: " + doDaiCanh);
 		System.out.println("Chu vi: " + chuVi + "\nDien tich: " + dienTich);
 		super.inTT();
+	}
+
+	@Override
+	public void tinhDTich() {
+		// TODO Auto-generated method stub
+		dienTich = doDaiCanh * doDaiCanh;
+	}
+
+	@Override
+	public void tinhCvi() {
+		// TODO Auto-generated method stub
+		chuVi = doDaiCanh * 4;
 	}
 }
