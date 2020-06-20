@@ -12,7 +12,6 @@ public abstract class ContactsManager
 		myFriends = new Contact[500];
 		friendsCount = 0;
 	}
-
 	// Methods:
 	// thêm 1 liên hệ
 	abstract public void addContact(Contact contact);

@@ -9,10 +9,9 @@ public:
     virtual int tinhLuong();
     virtual void nhap();
     virtual void in();
-};
+}
 
 void Nguoi ::nhap()
-
 {
     cin.ignore();
     cout << "Nhap ho va ten: " << endl;

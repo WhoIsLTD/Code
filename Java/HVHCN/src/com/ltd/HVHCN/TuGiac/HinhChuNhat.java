@@ -16,20 +16,21 @@ public class HinhChuNhat extends TuGiac {
 
 	}
 
-	@Override
-	public void tinhCV() {
-		chuVi = (chieuDai + chieuRong) * 2;
-
-	}
-
-	@Override
-	public void tinhDT() {
-		dienTich = chieuDai * chieuRong;
-	}
-
 	public void inTT() {
 		System.out.println("Chieu dai: " + chieuDai + "\nChieu rong: " + chieuRong);
 		System.out.println("Chu vi: " + chuVi + "\nDien tich: " + dienTich);
 		super.inTT();
+	}
+
+	@Override
+	public void tinhDTich() {
+		// TODO Auto-generated method stub
+		dienTich = chieuDai * chieuRong;
+	}
+
+	@Override
+	public void tinhCvi() {
+		// TODO Auto-generated method stub
+		chuVi = (chieuDai + chieuRong) * 2;
 	}
 }

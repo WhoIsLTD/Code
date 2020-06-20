@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - file",
+            "request": "launch",
+            "mainClass": "file",
+            "projectName": "Bai_tap"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Matran",
+            "request": "launch",
+            "mainClass": "Matran",
+            "projectName": "Bai_tap"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Array",
+            "request": "launch",
+            "mainClass": "Array",
+            "projectName": "Bai_tap"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TuGiac$Main",
             "request": "launch",
             "mainClass": "com.ltd.thhvhcn.TuGiac.TuGiac$Main",

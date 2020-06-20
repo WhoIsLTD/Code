@@ -112,4 +112,6 @@ int main()
         nguoi[i]->duocKhenThuong();
         cout << "-------------------" << endl;
     }
+
+    
 }

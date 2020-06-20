@@ -16,37 +16,71 @@ struct Node
     Sinhvien data;
     Node *pNext;
 };
+
 struct List
 {
     Node *pHead;
     Node *pTail;
 };
+
+//tao ds rong
 void Init(List &l)
 {
     l.pHead = l.pTail = NULL;
 }
+
+//cap bo nho
 Node *getNode(Sinhvien x)
 {
     Node *p;
     p = new Node;
-    p->data = x;
+    if (p == NULL)
+    {
+        cout << "Khong du bo nho !";
+        return NULL;
+    }
+    strcpy(p->data.hoten, x.hoten);
+    p->data.ns = x.ns;
+    p->data.diem = x.diem;
     p->pNext = NULL;
     return p;
 }
+
+//nhap thong tin sv
 void input(Sinhvien &x)
 {
     char hoten1[30];
     int ns1;
     float diem1;
-
-    cout << "Nhap ho ten:  " << endl;
-    cin.ignore();
-    cin.getline(x.hoten, 30);
-    cout << "Nhap thong tin nam sinh: " << endl;
-    cin >> x.ns;
-    cout << "Nhap thong tin diem: " << endl;
-    cin >> x.diem;
+    cout << "Nhap ho ten: ";
+    cin.ignore(1);
+    cin.getline(hoten1, 30);
+    strcpy(x.hoten, hoten1);
+    cout << "Nhap nam sinh: ";
+    cin >> ns1;
+    x.ns = ns1;
+    do
+    {
+        cout << "Nhap diem: ";
+        cin >> diem1;
+    } while (diem1 < 0 || diem1 > 10);
+    x.diem = diem1;
 }
+
+void xuatsv(Sinhvien sv)
+{
+    cout << "Ho va ten: " << sv.hoten << ". Nam sinh: " << sv.ns << ". Diem: " << sv.diem << endl;
+}
+
+void output(List l)
+{
+    for (Node *p = l.pHead; p != NULL; p = p->pNext)
+    {
+        xuatsv(p->data);
+    }
+}
+
+//them vao dau
 void addHead(List &l, Node *New_Node)
 {
     if (l.pHead == NULL)
@@ -59,104 +93,141 @@ void addHead(List &l, Node *New_Node)
         l.pHead = New_Node;
     }
 }
-void addTail(List &l, Node*New_Node)
+
+//them vao cuoi
+void addTail(List &l, Node *New_Node)
 {
-    
-    if(l.pHead == NULL)
+    if (l.pHead == NULL)
+    {
         l.pHead = l.pTail = New_Node;
+    }
     else
-        {
-            New_Node->pNext=l.pTail->pNext;
-            l.pTail->pNext = New_Node;
-            l.pTail = New_Node;
-        }
+    {
+        l.pTail->pNext = New_Node;
+        l.pTail = New_Node;
+    }
 }
+
 void hoanvi(Sinhvien &a, Sinhvien &b)
 {
     Sinhvien t = a;
     a = b;
     b = t;
 }
-void SapXep(List l)
+
+//sap xep tang dan diem
+void sapxep(List l)
 {
-    for (Node *p = l.pHead; p != NULL; p = p->pNext)
-    {
-        for (Node *q = p->pNext; q != NULL; q = q->pNext)
-        {
+    Node *p, *q;
+    for (p = l.pHead; p != NULL; p = p->pNext)
+        for (q = p->pNext; q != NULL; q = q->pNext)
             if (p->data.diem > q->data.diem)
-            {
                 hoanvi(p->data, q->data);
-            }
-        }
-    }
 }
-int Diem(List l)
+Sinhvien removeID(List &l)
 {
-    int max;
+    // xóa sinhvien id = 8
     Node *p = l.pHead;
-    max = 0;
+    Node *q = NULL;
     while (p != NULL)
     {
-        if (max < p->data.diem)
+        if (p->data.ns < 8)
         {
-            max = p->data.diem;
+            q = p->pNext;
+            p->pNext = q->pNext;
+            delete q;
         }
         p = p->pNext;
     }
-    return max;
+    if (p == NULL)
+    {
+        cout << "Không tìm thấy k";
+    }
+    else if (q == NULL)
+    { // thực hiện xóa phần tử đầu ds là p
+        Node *p = l.pHead;
+        l.pHead = p->pNext;
+        if (l.pHead == NULL)
+            l.pTail = NULL;
+        delete p;
+    }
+    else
+    {
+        // thực hiện xóa phần tử p sau q
+        Node *p = q->pNext;
+        q->pNext = p->pNext;
+        if (p == l.pTail)
+            l.pTail = q;
+        delete p;
+    }
 }
-void xuatsv(Sinhvien x)
-{
-    cout << " Ho va ten: " << x.hoten << endl;
-    cout << " Nam sinh:" << x.ns << endl;
-    cout << " Diem: " << x.diem << endl;
-}
-void output(List l)
+
+//tim so lon nhat
+void max(List l)
 {
     Node *p;
-    while (p != NULL)
+    float max = l.pHead->data.diem;
+    for (p = l.pHead; p != NULL; p = p->pNext)
+        if (max <= p->data.diem)
+            max = p->data.diem;
+    for (Node *p = l.pHead; p != NULL; p = p->pNext)
     {
-        cout << endl
-             << p->data.hoten << "\t" << p->data.ns << "\t" << p->data.diem << endl;
-        p = p->pNext;
+        if (p->data.diem == max)
+            xuatsv(p->data);
     }
 }
 
 int main()
 {
-    int n, max;
+    int n, i;
     Node *p;
-    Sinhvien x;
+    Sinhvien x, *sv;
     List l;
     Init(l);
-    cout << "nhap vao so luong sinh vien:" << endl;
-    cin >> n;
-    for (int i = 0; i < n; i++)
+
+    //nhap so luong sinh vien
+    do
     {
-        input(x);
-        p = getNode(x);
-        addHead(l, p);
+        cout << "Nhap so luong sinh vien: ";
+        cin >> n;
+    } while (n < 1 || n > 50);
+
+    //nhap thong tin sinh vien
+    sv = new Sinhvien[n];
+    cout << "\nNhap thong tin tung sinh vien." << endl;
+    for (i = 0; i < n; i++)
+    {
+        cout << "\nSinh vien thu " << i + 1 << endl;
+        input(sv[i]);
+        p = getNode(sv[i]);
+        addTail(l, p);
     }
-    cout << "-------------------------------";
-    cout << "danh sach sinh vien vua sap xep tang dan la:";
-    SapXep(l);
+    //in ra ds vua nhap
+    cout << "\nDanh sach sinh vien vua nhap la." << endl;
     output(l);
-    cout << "-------------------------------";
-    cout<<"Them 1 sv vao dau danh sach:" << endl;
-    input(x);
-    p = getNode(x);
-    addHead(l, p);
+
+    //1 sap xep theo diem tang dan
+    cout << "\nDanh sach sinh vien theo diem tang dan la." << endl;
+    sapxep(l);
     output(l);
-    // cout<<"Them 1 sv vao cuoi danh sach:" << endl;
+    removeID(l);
+    //2 them vao dau thong tin 1 sv
+    cout << "\nNhap them thong tin 1 sv vao dau danh sach: " << endl;
+    // input(x);
+    // p = getNode(x);
+    // addHead(l, p);
+    // cout << endl;
+    output(l);
+
+    //3 them vao cuoi thong tin 1 sv
+    // cout << "\nNhap them thong tin 1 sv vao cuoi danh sach: " << endl;
     // input(x);
     // p = getNode(x);
     // addTail(l, p);
+    // cout << endl;
+    // output(l);
 
-    cout <<"Nhung sv co diem cao nhat la:";
-    max = Diem(l);
-    for (p = l.pHead; p != NULL; p = p->pNext)
-        if (p->data.diem == max)
-        {
-            xuatsv(p->data);
-        }
+    // //4 tim va in ra nhung sinh vien diem cao
+    // cout << "\nThong tin nhung sv co diem cao nhat: " << endl;
+    // max(l);
 }

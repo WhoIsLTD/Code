@@ -1,237 +1,176 @@
 #include <iostream>
-#include <math.h>
+#include <cstdlib>
 using namespace std;
-
-struct Node // khai bao cau truc cua mot Node
+void menu()
 {
-    int data;
-    Node *pNext;
-};
-
-struct List
-{
-    Node *pHead; //con tro chua dia chi cua Node dau tien
-    Node *pTail; // Con tro chua dia chi cua Node sau cung.
-};
-
-Node *getNode(int n)
-{
-    Node *p;
-    p = new Node; //Xin cap phat bo nho cho Node
-    if (p == NULL)
-    {
-        cout << "Khong du bo nho de cap pha";
-        return NULL;
-    }
-    p->data = n;
-    p->pNext = NULL;
-    return p;
+	cout << "\n1. Sap xep va mo ta mang theo thuat toan doi cho truc tiep" << endl
+		 << "2. Sap xep va mo ta mang theo thuat toan noi bot" << endl
+		 << "3. Sap xep va mo ta thuat toan chen" << endl
+		 << "4. Sap xep va mo ta thuat toan chon lua" << endl
+		 << "5. Sap xep va mo ta thuat toan theo thuat toan sap xep nhanh" << endl
+		 << "6. Thoat!";
 }
-
-void Init(List &l)
+void Show(int a[], int n)
 {
-    l.pHead = l.pTail = NULL;
+	for (int dem = 0; dem < n; dem++)
+	{
+		cout << a[dem] << "\t";
+	}
+	cout << endl;
 }
-//them mot phan tu vao dau danh sach
-void addHead(List &l, Node *New_Node)
+void InterchangeSort(int a[], int n)
 {
-    if (l.pHead == NULL)
-        l.pHead = l.pTail = New_Node;
-    else
-    {
-        New_Node->pNext = l.pHead;
-        l.pHead = New_Node;
-    }
+	Show(a, n);
+	for (int i = 0; i < n - 1; i++)
+	{
+		cout << "i = " << i << endl;
+		for (int j = i + 1; j < n; j++)
+			if (a[i] > a[j]) //nếu có nghịch thế thì đổi chỗ
+			{
+				swap(a[i], a[j]);
+				Show(a, n);
+			}
+	}
 }
-// them mot phan tu vao cuoi danh sach
-void addTail(List &l, Node *New_Node)
+void swap(int &a, int &b)
 {
-
-    if (l.pHead == NULL)
-        l.pHead = l.pTail = New_Node;
-    else
-    {
-        l.pTail->pNext = New_Node;
-        l.pTail = New_Node;
-    }
+	int temp = a;
+	a = b;
+	b = temp;
 }
-// them mot phan tu vao vi tri k
-void addAt(List &l, int pos, Node *New_Node)
+void BubbleSort(int a[], int n)
 {
-    if (pos == 0 || l.pHead == NULL)
-    {
-        addHead(l, New_Node);
-    }
-    else
-    {
-        int k = 1;
-        Node *p = l.pHead;
-        while (p != NULL && k != pos)
-        {
-            p = p->pNext;
-            ++k;
-        }
-
-        if (k != pos)
-        {
-
-            addTail(l, New_Node);
-        }
-        else
-        {
-            New_Node->pNext = p->pNext;
-            p->pNext = New_Node;
-        }
-    }
+	Show(a, n);
+	for (int i = 0; i < n - 1; i++)
+	{
+		cout << "i = " << i << endl;
+		for (int j = n - 1; j > i; j--)
+			if (a[j] < a[j - 1])
+			{
+				swap(a[j], a[j - 1]);
+				Show(a, n);
+			}
+	}
 }
-// tim so nguyen to trong danh sach
-int Snt(List l)
+void InsertionSort(int a[], int n)
 {
-    Node *p;
-    int i, k = 0;
-    p = l.pHead;
-    while (p != NULL)
-    {
-        k = 0;
-        if (p->data < 2)
-        {
-            p = p->pNext;
-            continue;
-        }
-        else
-        {
-            for (i = 1; i <= p->data; i++)
-            {
-                if (p->data % i == 0)
-                    k++;
-            }
-        }
-        if (k == 2)
-            return p->data;
-        p = p->pNext;
-    }
+	Show(a, n);
+	int pos, x;
+	for (int i = 1; i < n; i++) //đoạn a[0] đã sắp
+	{
+		cout << "i = " << i << endl;
+		x = a[i];
+		pos = i;
+		while (pos > 0 && x < a[pos - 1])
+		{
+			a[pos] = a[pos - 1]; // dời chỗ
+			pos--;
+		}
+		a[pos] = x;
+		Show(a, n);
+	}
 }
-// tim vi tri cua phan tu trong danh sach
-int Search(List l, int x)
+void SelectionSort(int a[], int n)
 {
-    int pos = 1;
-    Node *p = l.pHead;
-    while (p != NULL)
-    {
-        if (p->data == x)
-            return pos;
-        p = p->pNext;
-        pos++;
-    }
-    return NULL;
+	Show(a, n);
+	int min; // chỉ số phần tử nhỏ nhất trong dãy hiện hành
+	for (int i = 0; i < n - 1; i++)
+	{
+		cout << "i = " << i << endl;
+		min = i;
+		for (int j = i + 1; j < n; j++)
+			if (a[j] < a[min])
+				min = j; // ghi nhận vị trí phần tử nhỏ nhất
+		if (min != i)
+		{
+			swap(a[min], a[i]);
+			Show(a, n);
+		}
+	}
 }
-// xoa phan tu le khoi danh sach
-void Even(List &l)
+void QuickSort(int a[], int left, int right)
 {
-    Node *e;
-    Node *p = l.pHead;
-
-    while (p != NULL && p->data % 2 == 0)
-    {
-        p = p->pNext;
-    }
-    l.pHead = p;
-    if (p == NULL)
-        return;
-    e = p;
-    p = p->pNext;
-    while (p != NULL)
-    {
-        if (e)
-            if (p->data % 2 != 0)
-            {
-                e->pNext = p;
-                e = p;
-            }
-        p = p->pNext;
-    }
+	int i, j, x;
+	if (left >= right)
+		return;
+	x = a[(left + right) / 2]; // chọn phần tử giữa làm giá trị mốc
+	i = left;
+	j = right;
+	do
+	{
+		while (a[i] < x)
+			i++;
+		while (a[j] > x)
+			j--;
+		if (i <= j)
+		{
+			swap(a[i], a[j]);
+			i++;
+			j--;
+		}
+	} while (i < j);
+	if (left < j)
+		QuickSort(a, left, j);
+	if (i < right)
+		QuickSort(a, i, right);
 }
-// in ra man hinh
-void output(List l)
+void copy(int a[], int b[], int n)
 {
-    Node *p = l.pHead;
-    while (p != NULL)
-    {
-        cout << p->data << "\t";
-        p = p->pNext;
-    }
-    cout << endl;
+	for (int i = 0; i < n; i++)
+		b[i] = a[i];
 }
-void addAfter(List &l, Node *q, Node *new_node)
-{
-    if (l.pHead == NULL && q == NULL)
-        l.pHead = l.pTail = new_node;
-    if (q != NULL)
-    {
-        new_node->pNext = q->pNext;
-        q->pNext = new_node;
-        if (q == l.pTail)
-            l.pTail = new_node;
-    }
-}
-
-void addBefore(List &l, Node *q, Node *new_node)
-{
-    Node *e = NULL;
-    Node *p = l.pHead;
-    while (p->data != q->data && p != NULL)
-    {
-        e = p;
-        p = p->pNext;
-    }
-    new_node->pNext = e->pNext;
-    e->pNext = new_node;
-}
-//main
 int main()
 {
-    Node *p;
-    List l;
-    Init(l);
-    //1. Nhập danh sách liên kết đơn gồm 10 số nguyên ngẫu nhiên
-    for (int i = 0; i < 10; i++)
-    {
-        int v = rand() % 10;
-        p = getNode(v);
-        addHead(l, p);
-    }
-    output(l);
-    //1a. Thêm vào đầu danh sách một node có giá trị bằng 8
-    cout << "Them 8 vao dau danh sach: " << endl;
-    p = getNode(8);
-    addHead(l, p);
-    output(l);
-    //1b. Thêm vào cuối danh sách lần lượt là các giá trị 19, 21, 33
-    cout << "Them 19, 21, 33 vao cuoi danh sach: " << endl;
-    p = getNode(19);
-    addTail(l, p);
-    p = getNode(21);
-    addTail(l, p);
-    p = getNode(33);
-    addTail(l, p);
-    output(l);
-    //1c. Thêm giá trị 100 vào vị trí thứ 5 trong danh sách.
-    cout << "Them 100 vao vi tri thu 5: " << endl;
-    p = getNode(100);
-    addAt(l, 4, p);
-    output(l);
-    //1d. Tìm giá trị đầu tiên là số nguyên tố trong danh sách, cho biết nó ở vị trí thứ mấy trong danh sách.
-    cout << "So nguyen to dau tien la: " << endl
-         << Snt(l) << endl
-         << "Tai vi tri thu: " << endl
-         << Search(l, Snt(l)) << endl;
-    //1e. Xóa các phần tử chẵn trong danh sách.
-    Node *g, *h;
-    g = getNode(7);
-    h = getNode(2);
-    addBefore(l, g, h);
-    output(l);
-    cout << "Xoa so chan trong danh sach: " << endl;
-    Even(l);
-    output(l);
+	int n;
+	do
+	{
+		cout << "nhap vao so phan tu cua mang: " << endl;
+		cin >> n;
+	} while (n < 0);
+	int a[n], b[n];
+	for (int i = 0; i < n; i++)
+	{
+		cout << "nhap vao a[" << i << "]: ";
+		cin >> a[i];
+	}
+	cout << "ma tran vua nhap la: " << endl;
+	Show(a, n);
+	menu();
+	int choice;
+	while (true)
+	{
+
+		cout << "\nNhap lua chon: " << endl;
+		cin >> choice;
+		copy(a, b, n);
+		switch (choice)
+		{
+		case 1:
+			cout << "Thuat toan doi cho truc tiep: " << endl;
+			InterchangeSort(b, n);
+			break;
+		case 2:
+			cout << "Thuat toan noi bot: " << endl;
+			BubbleSort(b, n);
+			break;
+		case 3:
+			cout << "Thuat toan chen: " << endl;
+			InsertionSort(b, n);
+			break;
+		case 4:
+			cout << "Thuat toan lua chon: " << endl;
+			SelectionSort(b, n);
+			break;
+		case 5:
+			cout << "Thuat toan QuickSort: " << endl;
+			Show(a, n);
+			QuickSort(b, 0, n);
+			Show(b, n);
+			break;
+		default:
+			cout << "Thoat!";
+			exit(1);
+			break;
+		}
+	}
 }

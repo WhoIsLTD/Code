@@ -46,7 +46,7 @@ void InSV(sinhvien sv[], int n)
     for (i = 0; i < n; i++)
         cout << "[" << i + 1 << "]: Ho ten: " << sv[i].hoten << "\t dtoan: " << sv[i].dtoan << "\t dly," << sv[i].dly << "\t dhoa: " << sv[i].dhoa << "\t dtb: " << sv[i].dtb << endl;
 }
-void Sapxep(sinhvien sv[], int n)
+sinhvien Sapxep(sinhvien sv[], int n)
 {
     sinhvien tg;
     int i, j;

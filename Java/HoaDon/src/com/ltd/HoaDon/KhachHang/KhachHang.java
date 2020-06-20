@@ -3,11 +3,10 @@ package com.ltd.HoaDon.KhachHang;
 import java.util.Scanner;
 
 public abstract class KhachHang {
-	private String id;
-	protected String name;
-	private int soLuong;
-	protected int donGia, nam;
+	private String id, name;
+	private int soLuong, donGia, nam, CountKHVN;
 	private double thanhTien;
+
 	public void nhapHD() {
 		Scanner sc = new Scanner(System.in);
 
@@ -20,12 +19,12 @@ public abstract class KhachHang {
 		System.out.println("Nhap vao so luong(KW tieu thu): ");
 		setSoLuong(sc.nextInt());
 		System.out.println("Nhap vao don gia: ");
-		donGia = sc.nextInt();
+		setDonGia(sc.nextInt());
 	}
 	
 	public void inHD() {
 		System.out.println("Ten: " + name + " ma: " + getId() + " ngay: " + getNam() +
-				" so luong: " + getSoLuong() + " don gia: " + donGia + "thanh tien: " + tien());
+				" so luong: " + getSoLuong() + " don gia: " + getDonGia() + "thanh tien: " + tien());
 	}
 	
 	public abstract double tien();
@@ -60,6 +59,14 @@ public abstract class KhachHang {
 
 	public void setNam(int nam) {
 		this.nam = nam;
+	}
+
+	public int getDonGia() {
+		return donGia;
+	}
+
+	public void setDonGia(int donGia) {
+		this.donGia = donGia;
 	}
 
 }

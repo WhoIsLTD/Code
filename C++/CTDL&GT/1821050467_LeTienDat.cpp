@@ -70,6 +70,8 @@ void addTail(List &l, Node *New_Node)
     }
 }
 // them mot Node vao truoc Node q;
+
+
 void addBefore(List &l, Node *q, Node *new_node)
 {
     Node *e;

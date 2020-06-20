@@ -10,7 +10,7 @@ public:
     phanso operator-(phanso b);
     phanso operator*(phanso b);
     phanso operator/(phanso b);
-    friend ostream &operator<<(ostream &out, phanso &a);
+    friend ostream &operator<<(ostream &out, phanso a);
     friend istream &operator>>(istream &in, phanso &a);
     void Toi_Gian();
     int operator<(phanso a);
@@ -18,17 +18,17 @@ public:
 istream &operator>>(istream &in, phanso &a)
 {
     cout << "nhap vo tu so: " << endl;
-    cin >> a.ts;
+    in >> a.ts;
     do
     {
         cout << "nhap vo mau so: " << endl;
-        cin >> a.ms;
+        in >> a.ms;
     } while (a.ms == 0);
 }
 
-ostream &operator<<(ostream &out, phanso &a)
+ostream &operator<<(ostream &out, phanso a)
 {
-    cout << a.ts << "/" << a.ms << endl;
+    out << a.ts << "/" << a.ms << endl;
 }
 
 void phanso ::Toi_Gian()
