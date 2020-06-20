@@ -75,7 +75,7 @@ int main()
 	}
 	cout << "\nLuong moi cua tung nhan vien." << endl;
 	for (i = 0; i < n; i++)
-	{
+	{	
 		cout << "\n\tNhan vien thu " << i+1 << endl;
 		a[i].in();
 	}

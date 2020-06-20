@@ -1,7 +1,5 @@
 package com.ltd.HVHCN.Main;
 
-import java.util.Scanner;
-
 import com.ltd.HVHCN.Dinh.Dinh;
 import com.ltd.HVHCN.HinhTron.HinhTron;
 import com.ltd.HVHCN.TuGiac.HinhChuNhat;
@@ -10,7 +8,6 @@ import com.ltd.HVHCN.TuGiac.TuGiac;
 
 public class Main {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
 
 		Dinh d1 = new Dinh(1, 1);
 		Dinh d2 = new Dinh(4, 1);

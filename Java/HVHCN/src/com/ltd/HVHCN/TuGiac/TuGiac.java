@@ -6,7 +6,7 @@ import com.ltd.HVHCN.ihinh.IHinh;
 public abstract class TuGiac implements IHinh {
 	protected Dinh d1, d2, d3, d4;
 	protected double chuVi, dienTich;
-
+	
 	public TuGiac(Dinh d1, Dinh d2, Dinh d3, Dinh d4) {
 		this.d1 = d1;
 		this.d2 = d2;
