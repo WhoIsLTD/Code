@@ -41,6 +41,8 @@
     <fullyQualifiedTypeName name="om.ltd.QuanLyHocSinh.QuanLy"/>
     <fullyQualifiedTypeName name="om.ltd.QuanLyHocSinh.HocSinh"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="com.ltd.QuanLyXe.Xe.XeNoiThanh"/>
+    <fullyQualifiedTypeName name="com.ltd.QuanLyXe.Xe.XeNgoaiThanh"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.ltd.QuanLyXe.Xe.XeNoiThanh"/>
+    <fullyQualifiedTypeName name="com.ltd.QuanLyXe.QuanLy.QuanLy"/>
 </qualifiedTypeNameHistroy>
