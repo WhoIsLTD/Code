@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 =\=\=\=\=\=\=
 <<<<<<<=HEAD
 >>>>>>>=26f4aada19bbbbb0771d6c5e802f1d394b988727
@@ -13,3 +14,20 @@ org.eclipse.jdt.ui.formatterprofiles.version=18
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true
 useQuickDiffPrefPage=true
+=======
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=26f4aada19bbbbb0771d6c5e802f1d394b988727
+command=/usr/lib/jvm/java-11-openjdk-amd64/bin/javadoc
+content_assist_disabled_computers=org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaPostfixProposalCategory\u0000org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.javaChainProposalCategory\u0000
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="com.ltd.TinhTuoi.Tuoi.TinhTuoi"><rhs name\="com.ltd.TinhTuoi.Tuoi.TinhTuoi"/></lhs><lhs name\="com.ltd.thhvhcn.TuGiac.TuGiac"><rhs name\="com.ltd.thhvhcn.TuGiac.HinhChuNhat"/></lhs><lhs name\="com.ltd.HVHCN.TuGiac.TuGiac"><rhs name\="com.ltd.HVHCN.TuGiac.HinhVuong"/></lhs><lhs name\="com.ltd.HVHCN.TuGiac.HinhVuong"><rhs name\="com.ltd.HVHCN.TuGiac.HinhVuong"/></lhs><lhs name\="java.io.OutputStreamWriter"><rhs name\="java.io.FileWriter"/></lhs><lhs name\="java.io.Writer"><rhs name\="java.io.FileWriter"/></lhs><lhs name\="java.lang.Appendable"><rhs name\="java.io.FileWriter"/></lhs><lhs name\="java.io.Closeable"><rhs name\="java.io.FileWriter"/><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="java.lang.AutoCloseable"><rhs name\="java.io.FileWriter"/><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="java.io.Flushable"><rhs name\="java.io.FileWriter"/></lhs><lhs name\="java.io.FileWriter"><rhs name\="java.io.FileWriter"/></lhs><lhs name\="java.io.InputStream"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="java.io.FileInputStream"><rhs name\="java.io.FileInputStream"/></lhs><lhs name\="com.ltd.ptbII.PhuongTrinhBac2"><rhs name\="com.ltd.ptbII.PhuongTrinhBac2"/></lhs><lhs name\="java.text.NumberFormat"><rhs name\="java.text.DecimalFormat"/></lhs><lhs name\="java.text.Format"><rhs name\="java.text.DecimalFormat"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.text.DecimalFormat"/><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.text.DecimalFormat"><rhs name\="java.text.DecimalFormat"/></lhs><lhs name\="com.ltd.ThuanNghichDoc.SoThuanNghich.SoThuanNghich"><rhs name\="com.ltd.ThuanNghichDoc.SoThuanNghich.SoThuanNghich"/></lhs><lhs name\="com.ltd.PhanSo.PhanSo"><rhs name\="com.ltd.PhanSo.PhanSo"/></lhs><lhs name\="com.ltd.Number1.Sumber.SumNumber"><rhs name\="com.ltd.Number1.Sumber.SumNumber"/></lhs><lhs name\="com.ltd.UCLNBCNN.UocBoi.UocBoi"><rhs name\="com.ltd.UCLNBCNN.UocBoi.UocBoi"/></lhs><lhs name\="com.ltd.TuVi.TuoiNguoi.TuoiNguoi"><rhs name\="com.ltd.TuVi.TuoiNguoi.TuoiNguoi"/></lhs><lhs name\="com.ltd.MonPhai.Skill.KyNang"><rhs name\="com.ltd.MonPhai.Skill.NoiCong"/><rhs name\="com.ltd.MonPhai.Skill.NgoaiCong"/></lhs><lhs name\="com.ltd.MonPhai.Skill.NgoaiCong"><rhs name\="com.ltd.MonPhai.Skill.NgoaiCong"/></lhs><lhs name\="com.ltd.MonPhai.Phai.MonPhai"><rhs name\="com.ltd.MonPhai.Phai.ThieuLam"/><rhs name\="com.ltd.MonPhai.Phai.VoDang"/></lhs><lhs name\="java.util.List"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.Collection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.lang.Iterable"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.RandomAccess"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.AbstractCollection"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="java.util.ArrayList"><rhs name\="java.util.ArrayList"/></lhs><lhs name\="om.ltd.QuanLyHocSinh.HocSinh"><rhs name\="om.ltd.QuanLyHocSinh.HocSinh"/></lhs><lhs name\="com.ltd.QuanLyXe.Xe.Xe"><rhs name\="com.ltd.QuanLyXe.Xe.XeNgoaiThanh"/><rhs name\="com.ltd.QuanLyXe.Xe.XeNoiThanh"/></lhs><lhs name\="com.ltd.QuanLyXe.Xe.XeNoiThanh"><rhs name\="com.ltd.QuanLyXe.Xe.XeNoiThanh"/></lhs><lhs name\="com.ltd.QuanLyXe.Xe.XeNgoaiThanh"><rhs name\="com.ltd.QuanLyXe.Xe.XeNgoaiThanh"/></lhs><lhs name\="com.ltd.QuanLyXe.QuanLy.QuanLy"><rhs name\="com.ltd.QuanLyXe.QuanLy.QuanLy"/></lhs></history>
+content_assist_number_of_computers=18
+eclipse.preferences.version=1
+markOccurrences=false
+org.eclipse.jdt.internal.ui.navigator.layout=2
+org.eclipse.jdt.internal.ui.navigator.librariesnode=true
+org.eclipse.jdt.ui.formatterprofiles.version=18
+spelling_locale_initialized=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true
+>>>>>>> b36c333abd130fbc7e5f1d2d7d61692639515e6b

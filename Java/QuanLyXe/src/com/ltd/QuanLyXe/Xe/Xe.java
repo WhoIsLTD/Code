@@ -30,6 +30,22 @@ public class Xe {
 		this.soXe = soXe;
 	}
 
+	public String getMaSoChuyen() {
+		return maSoChuyen;
+	}
+
+	public String getHoTenTaiXe() {
+		return hoTenTaiXe;
+	}
+
+	public int getSoXe() {
+		return soXe;
+	}
+
+	public int getDoanhThu() {
+		return doanhThu;
+	}
+
 	public void setDoanhThu(int doanhThu) {
 		this.doanhThu = doanhThu;
 	}
