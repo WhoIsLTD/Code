@@ -32,12 +32,6 @@ void InterchangeSort(int a[], int n)
 			}
 	}
 }
-void swap(int &a, int &b)
-{
-	int temp = a;
-	a = b;
-	b = temp;
-}
 void BubbleSort(int a[], int n)
 {
 	Show(a, n);
@@ -164,7 +158,7 @@ int main()
 		case 5:
 			cout << "Thuat toan QuickSort: " << endl;
 			Show(a, n);
-			QuickSort(b, 0, n);
+			QuickSort(b, 0, n-1);
 			Show(b, n);
 			break;
 		default:

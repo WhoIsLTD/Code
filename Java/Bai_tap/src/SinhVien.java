@@ -6,9 +6,6 @@ public class SinhVien {
 	private double diem;
 
 	public void Sinhvien() {
-		maSV = "";
-		hoTen = "";
-		diem = 0;
 	}
 
 	public String getHoTen() {
@@ -38,9 +35,11 @@ public class SinhVien {
 	public String toString() {
 		return "Ten: " + this.hoTen + "\nMaSV: " + this.maSV + "\nDiem: " + this.diem;
 	}
+
 	private static Scanner sc;
+
 	public static void main(String[] args) {
-		
+
 		int n, imax = 0;
 		double d, max = 0;
 		String m;

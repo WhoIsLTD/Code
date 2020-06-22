@@ -1,5 +1,13 @@
 #include <iostream>
 using namespace std;
+void Show(int a[], int n)
+{
+    for (int dem = 0; dem < n; dem++)
+    {
+        cout << a[dem] << "\t";
+    }
+    cout << endl;
+}
 void SelectionSort(int a[], int n)
 {
     int min;
@@ -33,17 +41,44 @@ void BubbleSort(int a[], int n)
 }
 void InsertSort(int a[], int n)
 {
-    for(int i = 1; i < n; i++)
+    for (int i = 1; i < n; i++)
     {
+        cout << "i = " << i << endl;
         int x = a[i];
         int pos = i;
-        while(pos > 0 && x < a[pos - 1])
+        for (int j = pos - 1; j >= 0; j--)
         {
-            a[pos] = a[pos-1];
+            if (a[j] > a[pos])
+                swap(a[j], a[pos]);
             pos--;
         }
-        a[pos] = x;
+        Show(a, n);
     }
+}
+void QuickSort(int a[], int left, int right)
+{
+    int i = left, j = right;
+    int x = a[(left + right) / 2];
+    do
+    {
+        while (a[i] > x)
+            i++;
+        while (a[j] < x)
+        {
+            j--;
+        }
+        if (i <= j)
+        {
+            swap(a[i], a[j]);
+            i++;
+            j--;
+        }
+    } while (i < j);
+
+    if (left < j)
+        QuickSort(a, left, j);
+    if (j < right)
+        QuickSort(a, j, right);
 }
 int main()
 {
@@ -53,7 +88,7 @@ int main()
         cout << "nhap vao a[" << i << "]: " << endl;
         cin >> a[i];
     }
-    InsertSort(a, n);
+    InsertSort(a, 10);
     for (int i = 0; i < 10; i++)
     {
         cout << a[i] << "\t";

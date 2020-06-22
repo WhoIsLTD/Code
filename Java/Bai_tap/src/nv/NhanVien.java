@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class NhanVien {
     protected int maNV, tuoi;
     protected String hoTen;
-	public NhanVien(maNV = 0; ) {
+	public NhanVien() {
 		
 	}
 	public NhanVien(int maNV, int tuoi, String hoTen) {
@@ -13,9 +13,11 @@ public class NhanVien {
 		this.hoTen = hoTen;
 	}
 
+
+	@Override
 	public String toString() {
-        return maNV + " " + tuoi + " " + hoTen;
-    }
+		return "NhanVien [maNV=" + maNV + ", tuoi=" + tuoi + ", hoTen=" + hoTen + "]";
+	}
 	public void setMaNV(int maNV) {
 		this.maNV = maNV;
 	}

@@ -75,11 +75,16 @@ int main()
 {
     Queue t;
     Init(t);
-    EnQueue(t, 5);
-    EnQueue(t, 4);
-    EnQueue(t, 6);
-    EnQueue(t, 7);
-    cout << size(t) << endl;
+    cout << EnQueue(t, 5) << endl;
+    cout << EnQueue(t, 4) << endl;
+    cout << EnQueue(t, 6) << endl;
+    cout << EnQueue(t, 7) << endl;
+    for (int i = 0; i < 3; i ++)
+    {
+        cout << DeQueue(t);
+    }
+    //cout << size(t) << endl;
+
     // cout << Front(t) << endl;
-    tinhTong(t);
+    //tinhTong(t);
 }

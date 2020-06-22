@@ -1,50 +1,45 @@
-<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <workingSetManager>
-<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588233249163_0" label="Java Main Sources" name="Java Main Sources">
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1592729752834_0" label="Java Main Sources" name="Java Main Sources">
+<item elementID="=Bai_tap/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=ChuSo/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ChuanHoa/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=DanhBa/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=FindMin/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Gallery/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Gallery/src\/com\/ltd\/gallery\/album\/com" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=GiaCam/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=HelloWorld/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=HVHCN/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=HoaDon/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=NgayThang/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Number1/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=PhanSo/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=PhuongTrinhBacI/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=QuanLyHocSinh/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=QuanLyMonPhai/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=QuanLyNhaDat/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=QuanLyNhanVien/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=QuanLySinhVien/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=QuanLyXe/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=QuickNote/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=ThongTinHVHCN/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=RevsertInt/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=SoNguyenTo/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Text/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ThuanNghichDoc/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ThucHanhFor/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=ThucHanhIfElse/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Todolist/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=Triangle/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=TruyenCuoi/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=TuVi/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=UCLNBCNN/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Vehicle/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=Vehicle/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=noooo/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=file/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=thucHanhArrayList/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=thucHanhString/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 <item elementID="=tong2SoAb/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
 </workingSet>
-<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588233249170_1" label="Java Test Sources" name="Java Test Sources"/>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588233250448_2" label="Window Working Set" name="Aggregate for window 1588233250448"/>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1592713266021_3" label="Window Working Set" name="Aggregate for window 1592713266021"/>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<workingSetManager>
-<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588233249163_0" label="Java Main Sources" name="Java Main Sources">
-<item elementID="=ChuSo/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=DanhBa/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=Gallery/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=Gallery/src\/com\/ltd\/gallery\/album\/com" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=GiaCam/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=HelloWorld/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=QuanLyNhanVien/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=QuanLySinhVien/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=QuickNote/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=ThongTinHVHCN/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=Todolist/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=TruyenCuoi/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=Vehicle/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=Vehicle/" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=noooo/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-<item elementID="=tong2SoAb/src" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
-</workingSet>
-<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588233249170_1" label="Java Test Sources" name="Java Test Sources"/>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1588233250448_2" label="Window Working Set" name="Aggregate for window 1588233250448"/>
-<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1592670514547_3" label="Window Working Set" name="Aggregate for window 1592670514547"/>
->>>>>>> b36c333abd130fbc7e5f1d2d7d61692639515e6b
+<workingSet editPageId="org.eclipse.jdt.internal.ui.DynamicSourcesWorkingSet" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1592729752861_1" label="Java Test Sources" name="Java Test Sources"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1592729757200_2" label="Window Working Set" name="Aggregate for window 1592729757200"/>
 </workingSetManager>

@@ -124,26 +124,12 @@ void sapxep(List l)
             if (p->data.diem > q->data.diem)
                 hoanvi(p->data, q->data);
 }
-Sinhvien removeID(List &l)
+void removeID(List &l)
 {
     // xóa sinhvien id = 8
     Node *p = l.pHead;
     Node *q = NULL;
-    while (p != NULL)
-    {
-        if (p->data.ns < 8)
-        {
-            q = p->pNext;
-            p->pNext = q->pNext;
-            delete q;
-        }
-        p = p->pNext;
-    }
-    if (p == NULL)
-    {
-        cout << "Không tìm thấy k";
-    }
-    else if (q == NULL)
+    while (l.pHead->data.ns < 8)
     { // thực hiện xóa phần tử đầu ds là p
         Node *p = l.pHead;
         l.pHead = p->pNext;
@@ -151,14 +137,19 @@ Sinhvien removeID(List &l)
             l.pTail = NULL;
         delete p;
     }
-    else
+
+    if (l.pHead != l.pTail)
     {
-        // thực hiện xóa phần tử p sau q
-        Node *p = q->pNext;
-        q->pNext = p->pNext;
-        if (p == l.pTail)
-            l.pTail = q;
-        delete p;
+        while (p != NULL)
+        {
+            while (p->pNext != NULL && p->pNext->data.ns < 8)
+            {
+                q = p->pNext;
+                p->pNext = q->pNext;
+                delete q;
+            }
+            p = p->pNext;
+        }
     }
 }
 
@@ -207,10 +198,11 @@ int main()
     output(l);
 
     //1 sap xep theo diem tang dan
-    cout << "\nDanh sach sinh vien theo diem tang dan la." << endl;
-    sapxep(l);
-    output(l);
+    // cout << "\nDanh sach sinh vien theo diem tang dan la." << endl;
+    // sapxep(l);
+    // output(l);
     removeID(l);
+    //Delete_3000(l);
     //2 them vao dau thong tin 1 sv
     cout << "\nNhap them thong tin 1 sv vao dau danh sach: " << endl;
     // input(x);

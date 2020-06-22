@@ -50,7 +50,7 @@
         "cinttypes": "cpp",
         "typeinfo": "cpp"
     },
-    "python.pythonPath": "/bin/python3",
+    "python.pythonPath": "C:\\Users\\ACER\\Anaconda3\\python.exe",
     "git.ignoreLimitWarning": true,
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true
