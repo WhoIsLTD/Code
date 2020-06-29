@@ -1,0 +1,3 @@
+NhanVien [maNV=3, tuoi=5, hoTen=]
+NhanVien [maNV=7, tuoi=8, hoTen=]
+NhanVien [maNV=6, tuoi=0, hoTen=]

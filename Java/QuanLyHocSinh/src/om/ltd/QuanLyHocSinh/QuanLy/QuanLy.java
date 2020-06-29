@@ -11,11 +11,9 @@ public class QuanLy {
 	}
 
 	public void themHS(HocSinh hs) {
-		for (int j = 0; j < listHS.size(); j++) {
-			if (hs.getTen().equals(listHS.get(j).getTen()))
+		for (int i = 0; i < listHS.size(); i++) {
+			if (hs.getTen().equals(listHS.get(i).getTen()))
 				System.out.println("trùng tên");
-
-			return;
 		}
 		listHS.add(hs);
 		System.out.println("add thành công");
@@ -49,13 +47,18 @@ public class QuanLy {
 
 	public void sapXepTuoiTangDan() {
 		Comparator<HocSinh> tcTuoiTangDan = new Comparator<HocSinh>() {
-			
+
 			@Override
 			public int compare(HocSinh hs1, HocSinh hs2) {
-				return hs1.getTuoi()-hs2.getTuoi();
+				return hs1.getTuoi() - hs2.getTuoi();
 			}
 		};
 		listHS.sort(tcTuoiTangDan);
-		System.out.println(listHS);
+	}
+
+	public void inTT() {
+		for (int i = 0; i < listHS.size(); i++) {
+			System.out.println(listHS.get(i));
+		}
 	}
 }

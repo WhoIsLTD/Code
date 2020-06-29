@@ -45,4 +45,7 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.ltd.QuanLyXe.Xe.XeNoiThanh"/>
     <fullyQualifiedTypeName name="com.ltd.QuanLyXe.QuanLy.QuanLy"/>
+    <fullyQualifiedTypeName name="nv.NhanVien"/>
+    <fullyQualifiedTypeName name="nv.nv.NhanVien"/>
+    <fullyQualifiedTypeName name="om.ltd.QuanLyHocSinh.QuanLy.HocSinh"/>
 </qualifiedTypeNameHistroy>
