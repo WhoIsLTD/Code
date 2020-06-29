@@ -15,5 +15,10 @@ public class Word {
 	public String getVnMean() {
 		return vnMean;
 	}
+
+	@Override
+	public String toString() {
+		return "Word [word=" + word + ", vnMean=" + vnMean + "]";
+	}
 	
 }

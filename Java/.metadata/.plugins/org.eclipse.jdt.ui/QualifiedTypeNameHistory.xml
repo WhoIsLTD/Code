@@ -48,4 +48,6 @@
     <fullyQualifiedTypeName name="nv.NhanVien"/>
     <fullyQualifiedTypeName name="nv.nv.NhanVien"/>
     <fullyQualifiedTypeName name="om.ltd.QuanLyHocSinh.QuanLy.HocSinh"/>
+    <fullyQualifiedTypeName name="com.ltd.HocTiengAnh.Word.WordManager"/>
+    <fullyQualifiedTypeName name="com.ltd.HocTiengAnh.Word.Word"/>
 </qualifiedTypeNameHistroy>

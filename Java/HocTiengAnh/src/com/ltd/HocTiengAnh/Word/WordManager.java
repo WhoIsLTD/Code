@@ -4,14 +4,15 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class WordManager {
-	ArrayList<Word> listWord = new ArrayList<Word>();
+	ArrayList<Word> listWord;
 	private String category;
 
 	public WordManager(String category) {
 		this.category = category;
+		 listWord = new ArrayList<Word>();
 	}
 
-	void addWord(Word w) {
+	public void addWord(Word w) {
 		int dem = 0;
 		for (int i = 0; i < listWord.size(); i++) {
 			if (listWord.get(i).getWord().equals(w.getWord()))
@@ -22,7 +23,7 @@ public class WordManager {
 		else
 			System.out.println("từ đã tồn tại!!!");
 	}
-	Word[] getTwoWordRandom() {
+	public Word[] getTwoWordRandom() {
 		Collections.shuffle(listWord);
 		Word wd[] = new Word[] {
 				listWord.get(0),
@@ -30,11 +31,16 @@ public class WordManager {
 		};
 		return wd;
 	}
-	void remove(String word) {
+	public void remove(String word) {
 		for (int i = 0; i < listWord.size(); i++) {
 			if(listWord.get(i).getWord().equals(word))
 				listWord.remove(i);
 		}
-		
+	}
+	public void show() {
+		for (int i = 0; i < listWord.size(); i++) {
+			System.out.println(listWord.get(i));
+			
+		}
 	}
 }
