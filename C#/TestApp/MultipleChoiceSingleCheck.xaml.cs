@@ -21,8 +21,8 @@ namespace TestApp
     /// </summary>
     public partial class MultipleChoiceSingleCheck : Window
     {
-        public ObservableCollection<AnswerInfo> answerInfos_;
-        public ListAnwer LsAnswer;
+        private ObservableCollection<AnswerInfo> answerInfos_;
+        private ListAnwer LsAnswer;
 
         public ObservableCollection<AnswerInfo> AnswerInfos { get => answerInfos_; set { answerInfos_ = value; } }
         public MultipleChoiceSingleCheck(ListAnwer LAnswer)
@@ -38,7 +38,6 @@ namespace TestApp
             try
             {
                 AnswerInfo answer = new AnswerInfo() { Id = "test", Type = "text", Value = "", Checked = false };
-
                 AnswerInfos.Add(answer);
                 lvAnswer.ItemsSource = AnswerInfos;
                 tblListOfAnswer.Text = "List of answers: " + AnswerInfos.Count.ToString();
@@ -52,16 +51,8 @@ namespace TestApp
         {
 
             //add question
-            txtQuestion.Text = LsAnswer.Value;
+            //txtQuestion.Text = LsAnswer.Value;
             Thickness thickness = new Thickness(2, 2, 2, 2);
-
-            //if (quizInfo_.Question.Answers.Count > 0)
-            //{
-            //    //lvAnswer.Items.Clear();
-            //    //lvAnswer.ItemsSource = quizInfo_.Question.Answers;
-            //    tblListOfAnswer.Text = "List of answers: " + quizInfo_.Question.Answers.Count.ToString();
-            //}
-            //test binding list - copy
             foreach (AnswerInfo answerInfo in LsAnswer.Answers)
             {
                 AnswerInfos.Add(answerInfo);
@@ -69,15 +60,24 @@ namespace TestApp
             lvAnswer.ItemsSource = AnswerInfos;
             tblListOfAnswer.Text = "List of answers: " + AnswerInfos.Count.ToString();
         }
+
         private void btnAccept_Click(object sender, RoutedEventArgs e)
         {
             LsAnswer.Value = txtQuestion.Text;
             LsAnswer.Answers.Clear();
-            foreach (AnswerInfo answerInfo in AnswerInfos)
+            try
             {
-                //quizInfo_.Question.Answers.Add(answerInfo);
-                LsAnswer.Answers.Add(answerInfo);
+                foreach (AnswerInfo answerInfo in AnswerInfos)
+                {
+                    LsAnswer.Answers.Add(answerInfo);
+                }
             }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.ToString());
+            }
+
             this.DialogResult = true;
         }
         public ListAnwer GetAnswer()
@@ -85,5 +85,9 @@ namespace TestApp
             return LsAnswer;
         }
 
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

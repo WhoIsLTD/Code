@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestApp" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="Window1" Height="450" Width="800" >
     <Grid Background="#FFC4E4E3">
         <Grid.RowDefinitions>
             <RowDefinition Height="253*"/>
@@ -118,7 +118,7 @@
             </Button>
             <Button
     Style="{StaticResource MaterialDesignRaisedButton}"
-    ToolTip="Resource name: MaterialDesignRaisedButton" Grid.Column="2" Margin="10" Height="Auto" >
+    ToolTip="Resource name: MaterialDesignRaisedButton" Name="btnCancel" Grid.Column="2" Margin="10" Height="Auto" Click="btnCancel_Click" >
                 _Cancel
             </Button>
         </Grid>

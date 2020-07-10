@@ -21,34 +21,34 @@ namespace TestApp
     /// </summary>
     public partial class MainWindow : Window
     {
-        private ListAnwer LAnswer;
-        public ListAnwer listAnwer { get => LAnswer; set { LAnswer = value; } }
+        private ListAnwer Lsnswer;
+        public ListAnwer listAnwer { get => Lsnswer; set { Lsnswer = value; } }
         private string answer_ = "";
         public MainWindow()
         {
             InitializeComponent();
+            //Lsnswer = LAnswer;
         }
         private void LoadData()
         {
-            tblQuestion.Text = LAnswer.Value;
+            tblQuestion.Text = Lsnswer.Value;
             // load media
 
             //add answers - lưu đáp án  
-            foreach (AnswerInfo answer in LAnswer.Answers)
+            foreach (AnswerInfo answer in Lsnswer.Answers)
             {
                 AddAnswerToListView(answer);
             }
-
             //chinh do rong window vua kich thuoc control
 
         }
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
-            MultipleChoiceSingleCheck multipleChoice = new MultipleChoiceSingleCheck(LAnswer);
+            MultipleChoiceSingleCheck multipleChoice = new MultipleChoiceSingleCheck(Lsnswer);
             multipleChoice.ShowDialog();
             spMainControl.Children.Clear();
             LoadData();
-            LAnswer = multipleChoice.GetAnswer();
+            Lsnswer = multipleChoice.GetAnswer();
             
         }
         private void AddAnswerToListView(AnswerInfo answer)
@@ -65,6 +65,7 @@ namespace TestApp
                 answer_ = answer.Value;
             spMainControl.Children.Add(radioButton);
         }
+
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
         {
 
