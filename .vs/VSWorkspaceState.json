@@ -1,17 +1,15 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Python",
-    "\\Python\\Python Code",
-    "\\Python\\Python Code\\11. File I&O",
-    "\\Python\\Tài liệu Python",
-    "\\Python\\Tài liệu Python\\Udemy",
-    "\\Python\\Tài liệu Python\\Udemy\\Kurs-Struktur mit Lösung",
-    "\\Python\\Tài liệu Python\\Udemy\\Kurs-Struktur mit Lösung\\2 - Python Grundlagen",
-    "\\Python\\Tài liệu Python\\Udemy\\Kurs-Struktur mit Lösung\\2 - Python Grundlagen\\2 - Variablen",
-    "\\Python\\Tài liệu Python\\Udemy\\Kurs-Struktur mit Lösung\\5 - Matplotlib",
-    "\\Python\\Tài liệu Python\\Udemy\\Kurs-Struktur mit Lösung\\5 - Matplotlib\\4 - Punktdiagramme (X,Y)"
+    "\\C#",
+    "\\C#\\ConsoleApp1",
+    "\\C#\\ConsoleApp1\\ConsoleApp1",
+    "\\C#\\ConsoleApp1\\ConsoleApp1\\bin",
+    "\\C#\\HelloWord",
+    "\\C#\\HelloWorl",
+    "\\C#\\HelloWorl\\HelloWorl",
+    "\\Python"
   ],
-  "SelectedNode": "\\Python\\Tài liệu Python\\Udemy\\Kurs-Struktur mit Lösung\\2 - Python Grundlagen\\2 - Variablen\\vars_instructor.py",
+  "SelectedNode": "\\C#\\ConsoleApp1\\ConsoleApp1\\Program.cs",
   "PreviewInSolutionExplorer": false
 }

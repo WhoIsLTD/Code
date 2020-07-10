@@ -9,6 +9,7 @@ public:
     void OUTPUT();
     vector operator+(vector );
     int operator*(vector );
+    vector oprator=
 };
 
 void vector ::INPUT()

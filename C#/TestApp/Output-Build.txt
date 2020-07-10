@@ -1,0 +1,3 @@
+﻿1>------ Build started: Project: TestApp, Configuration: Debug Any CPU ------
+1>E:\Code\C#\TestApp\MainWindow.xaml.cs(21,26,21,36): error CS0263: Partial declarations of 'MainWindow' must not specify different base classes
+========== Build: 0 succeeded, 1 failed, 0 up-to-date, 0 skipped ==========

@@ -116,6 +116,8 @@ void copy(int a[], int b[], int n)
 int main()
 {
 	int n;
+	int ch = 'A';
+	cout << ch;
 	do
 	{
 		cout << "nhap vao so phan tu cua mang: " << endl;

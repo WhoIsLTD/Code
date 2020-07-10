@@ -47,7 +47,7 @@ T hoanVi(T a[], int n)
             {
                 T temp = a[i];
                 a[i] = a[j];
-                a[j] = temp;
+                a[j] = temp;9
             }
         }
     }

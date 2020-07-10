@@ -40,9 +40,7 @@
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="om.ltd.QuanLyHocSinh.QuanLy"/>
     <fullyQualifiedTypeName name="om.ltd.QuanLyHocSinh.HocSinh"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.ltd.QuanLyXe.Xe.XeNgoaiThanh"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="com.ltd.QuanLyXe.Xe.XeNoiThanh"/>
     <fullyQualifiedTypeName name="com.ltd.QuanLyXe.QuanLy.QuanLy"/>
     <fullyQualifiedTypeName name="nv.NhanVien"/>
@@ -50,4 +48,11 @@
     <fullyQualifiedTypeName name="om.ltd.QuanLyHocSinh.QuanLy.HocSinh"/>
     <fullyQualifiedTypeName name="com.ltd.HocTiengAnh.Word.WordManager"/>
     <fullyQualifiedTypeName name="com.ltd.HocTiengAnh.Word.Word"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.net.ServerSocket"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="com.ltd.JustTest.HocSinh.HocSinh"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+    <fullyQualifiedTypeName name="com.ltd.JustTest.HocSinh.QuanLy"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
 </qualifiedTypeNameHistroy>

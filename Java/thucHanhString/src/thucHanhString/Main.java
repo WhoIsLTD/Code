@@ -15,13 +15,14 @@ public class Main {
 //	rs1 = text4.equals(text3);
 //	System.out.println("heap equals heap: " + rs1);
 		String text = "Hello1 An2dro5id";
-		int tong = 0;
-		for (int viTri = 0; viTri < text.length(); viTri++) {
-			char nam = text.charAt(viTri);
-			if(nam >= '0' && nam <= '9')
-				tong += nam - 48;
-				
-			
-		}System.out.println(tong);
+//		int tong = 0;
+//		for (int viTri = 0; viTri < text.length(); viTri++) {
+//			char nam = text.charAt(viTri);
+//			if(nam >= '0' && nam <= '9')
+//				tong += nam - 48;
+//				
+//			
+//		}System.out.println(tong);
+		System.out.println(text.indexOf("1"));
 	}
 }

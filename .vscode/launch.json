@@ -5,191 +5,54 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "type": "java",
-            "name": "CodeLens (Launch) - file",
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
             "request": "launch",
-            "mainClass": "file",
-            "projectName": "Bai_tap"
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal",
+            "pipeTransport": {
+                "pipeCwd": "${workspaceFolder}",
+                "pipeProgram": "enter the fully qualified path for the pipe program name, for example '/usr/bin/ssh'",
+                "pipeArgs": [],
+                "debuggerPath": "enter the path for the debugger on the target machine, for example ~/vsdbg/vsdbg"
+            }
         },
         {
-            "type": "java",
-            "name": "CodeLens (Launch) - Matran",
+            "name": ".NET Core Launch (web)",
+            "type": "coreclr",
             "request": "launch",
-            "mainClass": "Matran",
-            "projectName": "Bai_tap"
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
         },
+        
         {
-            "type": "java",
-            "name": "CodeLens (Launch) - Array",
+            "name": ".NET Core Launch (console)",
+            "type": "coreclr",
             "request": "launch",
-            "mainClass": "Array",
-            "projectName": "Bai_tap"
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/bin/Debug/<target-framework>/<project-name.dll>",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "integratedTerminal"
         },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - TuGiac$Main",
-            "request": "launch",
-            "mainClass": "com.ltd.thhvhcn.TuGiac.TuGiac$Main",
-            "projectName": "ThongTinHVHCN"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - TuGiac",
-            "request": "launch",
-            "mainClass": "com.ltd.thhvhcn.TuGiac.TuGiac",
-            "projectName": "ThongTinHVHCN"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Main",
-            "request": "launch",
-            "mainClass": "com.ltd.thhvhcn.Main.Main",
-            "projectName": "ThongTinHVHCN"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Main",
-            "request": "launch",
-            "mainClass": "Main",
-            "projectName": "ThongTinHVHCN"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - bai3",
-            "request": "launch",
-            "mainClass": "bai3",
-            "projectName": "Bai_tap"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - SinhVien",
-            "request": "launch",
-            "mainClass": "SinhVien",
-            "projectName": "Bai_tap"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - bai3",
-            "request": "launch",
-            "mainClass": "bai3",
-            "projectName": "Bai_tap"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - SinhVien",
-            "request": "launch",
-            "mainClass": "SinhVien",
-            "projectName": "HelloWorld"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - bai2",
-            "request": "launch",
-            "mainClass": "bai2",
-            "projectName": "Bai_tap"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - bai5",
-            "request": "launch",
-            "mainClass": "Bai_tap.bai5",
-            "projectName": "Java"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - bai4",
-            "request": "launch",
-            "mainClass": "Bai_tap.bai4",
-            "projectName": "Java"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - bai3",
-            "request": "launch",
-            "mainClass": "Bai_tap.bai3",
-            "projectName": "Java"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - matrix",
-            "request": "launch",
-            "mainClass": "matrix",
-            "projectName": "Code_a7bd7f47"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - bai6",
-            "request": "launch",
-            "mainClass": "bai6",
-            "projectName": "Code_a7bd7f47"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - bai5",
-            "request": "launch",
-            "mainClass": "bai5",
-            "projectName": "Code_a7bd7f47"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - bai4",
-            "request": "launch",
-            "mainClass": "bai4",
-            "projectName": "Code_a7bd7f47"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - bai3",
-            "request": "launch",
-            "mainClass": "bai3",
-            "projectName": "Code_a7bd7f47"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - bai2",
-            "request": "launch",
-            "mainClass": "bai2",
-            "projectName": "Code_a7bd7f47"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - bai1",
-            "request": "launch",
-            "mainClass": "bai1",
-            "projectName": "Code_a7bd7f47"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - Variables",
-            "request": "launch",
-            "mainClass": "Variables",
-            "projectName": "Code_a7bd7f47"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - test",
-            "request": "launch",
-            "mainClass": "kiemtrasoduong.test"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - test",
-            "request": "launch",
-            "mainClass": "Test.test",
-            "projectName": "Code_a7bd7f47"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch) - Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-Simple<Code_a7bd7f47>",
-            "request": "launch",
-            "mainClass": "Simple",
-            "projectName": "Code_a7bd7f47"
-        }
+
     ]
 }
