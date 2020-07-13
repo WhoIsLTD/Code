@@ -30,7 +30,6 @@ namespace TestApp
             InitializeComponent();
             LsAnswer = LAnswer;
             AnswerInfos = new ObservableCollection<AnswerInfo>();
-
         }
 
         private void btnAddAnswer_Click(object sender, RoutedEventArgs e)
@@ -39,7 +38,9 @@ namespace TestApp
             {
                 AnswerInfo answer = new AnswerInfo() { Id = "test", Type = "text", Value = "", Checked = false };
                 AnswerInfos.Add(answer);
+                
                 lvAnswer.ItemsSource = AnswerInfos;
+                LsAnswer.Answers.Add(answer);
                 tblListOfAnswer.Text = "List of answers: " + AnswerInfos.Count.ToString();
             }
             catch (Exception ex)
@@ -51,13 +52,14 @@ namespace TestApp
         {
 
             //add question
-            //txtQuestion.Text = LsAnswer.Value;
+            txtQuestion.Text = LsAnswer.Value;
             Thickness thickness = new Thickness(2, 2, 2, 2);
             foreach (AnswerInfo answerInfo in LsAnswer.Answers)
             {
                 AnswerInfos.Add(answerInfo);
             }
             lvAnswer.ItemsSource = AnswerInfos;
+            
             tblListOfAnswer.Text = "List of answers: " + AnswerInfos.Count.ToString();
         }
 

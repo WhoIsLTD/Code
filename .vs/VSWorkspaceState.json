@@ -4,12 +4,11 @@
     "\\C#",
     "\\C#\\ConsoleApp1",
     "\\C#\\ConsoleApp1\\ConsoleApp1",
-    "\\C#\\ConsoleApp1\\ConsoleApp1\\bin",
-    "\\C#\\HelloWord",
     "\\C#\\HelloWorl",
     "\\C#\\HelloWorl\\HelloWorl",
+    "\\C#\\TestApp",
     "\\Python"
   ],
-  "SelectedNode": "\\C#\\ConsoleApp1\\ConsoleApp1\\Program.cs",
+  "SelectedNode": "\\C#\\TestApp\\MultipleChoiceSingleCheck.xaml.cs",
   "PreviewInSolutionExplorer": false
 }

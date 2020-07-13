@@ -25,15 +25,14 @@ namespace Test1
     /// <summary>
     /// Interaction logic for Page1.xaml
     /// </summary>
-    public partial class MultipeChoiceSingleCheck : Window
+    public partial class MultipleChoiceSingleCheck : Window
     {
         private ObservableCollection<AnswerInfo> answerInfos_;
         private QuizInfo quizInfo_;
         public ObservableCollection<AnswerInfo> AnswerInfos { get => answerInfos_; set { answerInfos_ = value; } }
-        public MultipeChoiceSingleCheck(QuizInfo quizInfo)
+        public MultipleChoiceSingleCheck()
         {
             InitializeComponent();
-            quizInfo_ = quizInfo;
             txtQuestion.Text = "";
             AnswerInfos = new ObservableCollection<AnswerInfo>();
         }

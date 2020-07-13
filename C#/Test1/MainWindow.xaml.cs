@@ -22,7 +22,7 @@ namespace Test1
     /// </summary>
     public partial class MainWindow : Window
     {
-        private QuizInfo quizInfo;
+        private QuizInfo quizInfo_;
 
         public MainWindow()
         {
@@ -31,7 +31,7 @@ namespace Test1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MultipeChoiceSingleCheck frm = new MultipeChoiceSingleCheck(quizInfo);
+            MultipleChoiceSingleCheck frm = new MultipleChoiceSingleCheck();
             frm.ShowDialog();
         }
 

@@ -31,7 +31,7 @@ namespace TestApp
         }
         private void LoadData()
         {
-            tblQuestion.Text = Lsnswer.Value;
+            //tblQuestion.Text = Lsnswer.Value;
             // load media
 
             //add answers - lưu đáp án  
@@ -46,21 +46,14 @@ namespace TestApp
         {
             MultipleChoiceSingleCheck multipleChoice = new MultipleChoiceSingleCheck(Lsnswer);
             multipleChoice.ShowDialog();
+            Lsnswer = multipleChoice.GetAnswer();
             spMainControl.Children.Clear();
             LoadData();
-            Lsnswer = multipleChoice.GetAnswer();
-            
         }
         private void AddAnswerToListView(AnswerInfo answer)
         {
             RadioButton radioButton = new RadioButton();
             radioButton.Content = answer.Value;
-            //check 0
-            //radioButton.FontSize = quizInfo_.Size != 0 ? quizInfo_.Size : 14;
-            //check null
-            //radioButton.FontFamily = new FontFamily(quizInfo_.Font != null ? quizInfo_.Font : "Arial");
-            //radioButton.FontWeight = quizInfo_.Bold == true ? FontWeights.Bold : FontWeights.Normal;
-            //radioButton.Margin = thickness;
             if (answer.Checked == true)
                 answer_ = answer.Value;
             spMainControl.Children.Add(radioButton);
