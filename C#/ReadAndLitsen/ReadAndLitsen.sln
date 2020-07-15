@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadAndLitsen", "ReadAndLitsen\ReadAndLitsen.csproj", "{493B8198-3942-4600-A4AD-FF98752D9F84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{493B8198-3942-4600-A4AD-FF98752D9F84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{493B8198-3942-4600-A4AD-FF98752D9F84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{493B8198-3942-4600-A4AD-FF98752D9F84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{493B8198-3942-4600-A4AD-FF98752D9F84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7DF71779-88F8-471E-A5A0-0BB133723D48}
+	EndGlobalSection
+EndGlobal
