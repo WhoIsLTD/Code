@@ -103,7 +103,7 @@ namespace TestApp
             foreach (var item in spMainControl.Children)
             {
                 if (item is RadioButton)
-                {   
+                {
                     RadioButton radioButton = item as RadioButton;
                     radioButton.IsChecked = false;
                 }
@@ -114,7 +114,7 @@ namespace TestApp
         {
             foreach (var item in spMainControl.Children)
             {
-                if (item is RadioButton)
+                if (item is Button)
                 {
                     RadioButton radioButton = item as RadioButton;
                     if(radioButton.IsChecked == true)

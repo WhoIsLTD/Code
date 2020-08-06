@@ -107,7 +107,7 @@ namespace TestApp
             BitmapImage image = new BitmapImage();
             image.BeginInit();
             image.UriSource = new Uri(MediaName.Text);
-            image.EndInit(); 
+            image.EndInit();
             wd.Background = new ImageBrush(image);
             wd.Show();
             

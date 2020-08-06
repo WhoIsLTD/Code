@@ -1,0 +1,32 @@
+﻿<Window x:Class="TuRaDeTheoPhepTinh.Mainn"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TuRaDeTheoPhepTinh"
+        mc:Ignorable="d"
+        Title="Mainn" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="341*"/>
+        </Grid.RowDefinitions>
+        <ComboBox Grid.Row="0">
+            <ComboBoxItem IsSelected="True">
+                <Label >NOcmt</Label>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <Button x:Name="but" Click="but_Click"> select</Button>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <Button x:Name="but1" > cái 2 nè</Button>
+            </ComboBoxItem>
+            <ComboBoxItem>
+                <Button x:Name="but2">Cái 3 nè</Button>
+            </ComboBoxItem>
+        </ComboBox>
+        <StackPanel x:Name="sp4" Grid.Row="1">
+            
+        </StackPanel>
+    </Grid>
+</Window>

@@ -50,7 +50,7 @@
         "cinttypes": "cpp",
         "typeinfo": "cpp"
     },
-    "python.pythonPath": "C:\\Users\\ACER\\AppData\\Local\\Programs\\Python\\Python37\\python.exe",
+    "python.pythonPath": "C:\\Users\\_LTD_\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
     "git.ignoreLimitWarning": true,
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true
