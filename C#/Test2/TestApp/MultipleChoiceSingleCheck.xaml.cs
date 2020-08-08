@@ -40,7 +40,6 @@ namespace TestApp
             {
                 AnswerInfo answer = new AnswerInfo() { Id = "test", Type = "text", Value = "", Checked = false };
                 AnswerInfos.Add(answer);
-                //lvAnswer.ItemsSource = AnswerInfos;
                 tblListOfAnswer.Text = "List of answers: " + AnswerInfos.Count.ToString();
             }
             catch (Exception ex)
@@ -61,9 +60,8 @@ namespace TestApp
         }
         private void btnAccept_Click(object sender, RoutedEventArgs e)
         {
-            
+
             lsAnswer.Value = txtQuestion.Text;
-            //if (".jpg".Contains(flName) || ".png".Contains(flName))
             lsAnswer.MediaType = "image";
             lsAnswer.MediaUrl = flName;
             lsAnswer.ListAnswer.Answers.Clear();
@@ -103,6 +101,7 @@ namespace TestApp
 
         private void btnShowImage_Click(object sender, RoutedEventArgs e)
         {
+<<<<<<< HEAD
             Window wd = new Window();
             BitmapImage image = new BitmapImage();
             image.BeginInit();
@@ -111,6 +110,25 @@ namespace TestApp
             wd.Background = new ImageBrush(image);
             wd.Show();
             
+=======
+            try
+            {
+                Window wd = new Window();
+                BitmapImage image = new BitmapImage();
+                image.BeginInit();
+                if (MediaName.Text == null)
+                    MediaName.Text = flName;
+                image.UriSource = new Uri(MediaName.Text);
+                image.EndInit();
+                wd.Background = new ImageBrush(image);
+                wd.Show();
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Chưa thêm hình ảnh!!!");
+            }
+
+>>>>>>> cf7d0a42bb5f9b04f33f7b2894a6c5565bd88907
         }
         private void btnTrash_Click(object sender, RoutedEventArgs e)
         {

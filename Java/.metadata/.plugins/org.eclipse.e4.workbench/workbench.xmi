@@ -101,7 +101,7 @@
               </children>
             </children>
             <children xsi:type="basic:PartSashContainer" xmi:id="_5UDfnb9ZEeqQ_vQLNjXOxw" containerData="8283" selectedElement="_5UDfnr9ZEeqQ_vQLNjXOxw" horizontal="true">
-              <children xsi:type="basic:PartSashContainer" xmi:id="_5UDfnr9ZEeqQ_vQLNjXOxw" containerData="5000" selectedElement="_5UDfn79ZEeqQ_vQLNjXOxw">
+              <children xsi:type="basic:PartSashContainer" xmi:id="_5UDfnr9ZEeqQ_vQLNjXOxw" containerData="5000" selectedElement="_5UDfoL9ZEeqQ_vQLNjXOxw">
                 <children xsi:type="advanced:Placeholder" xmi:id="_5UDfn79ZEeqQ_vQLNjXOxw" elementId="org.eclipse.ui.editorss" containerData="7381" ref="_5UGjFL9ZEeqQ_vQLNjXOxw"/>
                 <children xsi:type="basic:PartStack" xmi:id="_5UDfoL9ZEeqQ_vQLNjXOxw" elementId="bottom" containerData="2619" selectedElement="_5UDfpb9ZEeqQ_vQLNjXOxw">
                   <tags>org.eclipse.e4.secondaryDataStack</tags>
@@ -211,7 +211,7 @@
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_5UGjGr9ZEeqQ_vQLNjXOxw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="HocSinh.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HocSinh.java&quot; partName=&quot;HocSinh.java&quot; title=&quot;HocSinh.java&quot; tooltip=&quot;JustTest/src/com/ltd/JustTest/HocSinh/HocSinh.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/JustTest/src/com/ltd/JustTest/HocSinh/HocSinh.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;235&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;HocSinh.java&quot; partName=&quot;HocSinh.java&quot; title=&quot;HocSinh.java&quot; tooltip=&quot;JustTest/src/com/ltd/JustTest/HocSinh/HocSinh.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/JustTest/src/com/ltd/JustTest/HocSinh/HocSinh.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;33&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>removeOnHide</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
@@ -413,7 +413,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_5UI_K79ZEeqQ_vQLNjXOxw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Cmr-p8PmEeq-_Mj9S4apuA" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_5UbTJr9ZEeqQ_vQLNjXOxw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ot3sIMXKEeqPqbnuJ_0u_w" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_5UbTJr9ZEeqQ_vQLNjXOxw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_5UI_OL9ZEeqQ_vQLNjXOxw" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -444,7 +444,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_5UJmTb9ZEeqQ_vQLNjXOxw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Cmr-tMPmEeq-_Mj9S4apuA" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_5UaFIr9ZEeqQ_vQLNjXOxw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ot3sLcXKEeqPqbnuJ_0u_w" elementId="org.eclipse.ui.window.pinEditor" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_5UaFIr9ZEeqQ_vQLNjXOxw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_5UJmWL9ZEeqQ_vQLNjXOxw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -2356,6 +2356,7 @@
   <commands xmi:id="_5Uin9L9ZEeqQ_vQLNjXOxw" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.tasks.ui.open.repositories.view" commandName="Show Task Repositories View" description="Show Task Repositories View" category="_5UjO7r9ZEeqQ_vQLNjXOxw"/>
   <commands xmi:id="_5Uin9b9ZEeqQ_vQLNjXOxw" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.doc.legend.show.action" commandName="Show UI Legend" description="Show Tasks UI Legend" category="_5UjO7r9ZEeqQ_vQLNjXOxw"/>
   <commands xmi:id="_5Uin9r9ZEeqQ_vQLNjXOxw" elementId="AUTOGEN:::org.eclipse.mylyn.tasks.ui.actions.view/org.eclipse.mylyn.context.ui.actions.tasklist.focus" commandName="Focus on Workweek" description="Focus on Workweek" category="_5UjO7r9ZEeqQ_vQLNjXOxw"/>
+  <commands xmi:id="_oasRccXKEeqPqbnuJ_0u_w" elementId="org.eclipse.oomph.setup.donate" commandName="Donate" description="Donate to the development of the Eclipse IDE" category="_5UjO7r9ZEeqQ_vQLNjXOxw"/>
   <addons xmi:id="_5Uin979ZEeqQ_vQLNjXOxw" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_5Uin-L9ZEeqQ_vQLNjXOxw" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_5Uin-b9ZEeqQ_vQLNjXOxw" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>

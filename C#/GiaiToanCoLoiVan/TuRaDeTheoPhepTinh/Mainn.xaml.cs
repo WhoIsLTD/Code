@@ -29,7 +29,7 @@ namespace TuRaDeTheoPhepTinh
         }
         private void LoadWindow()
         {
-            
+
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -48,7 +48,7 @@ namespace TuRaDeTheoPhepTinh
 
         private void but_Click(object sender, RoutedEventArgs e)
         {
-
+            sp4.Children.Clear();
             MainPhepTinh mainPhepTinh = new MainPhepTinh();
             sp4.Children.Add(mainPhepTinh);
             //EditTuRaDe editTuRaDe = new EditTuRaDe(phepTinh);
@@ -62,19 +62,13 @@ namespace TuRaDeTheoPhepTinh
             //    sp4.Children.Clear();
             //    MainTuRaDe mainTuRaDe = new MainTuRaDe();
             //    sp4.Children.Add(mainTuRaDe);
-            }    
-            
-            
         }
 
-        //private void but1_Click(object sender, RoutedEventArgs e)
-        //{ 
-        //    //MainTuRaDe mainTuRaDe = new MainTuRaDe();
-        //    //sp.Children.Add
-        //}
-
-        //private void but2_Click(object sender, RoutedEventArgs e)
-        //{
-
-        //}
+        private void ChonDapAn_Click(object sender, RoutedEventArgs e)
+        {
+            sp4.Children.Clear();
+            MainWindow mainWindow = new MainWindow();
+            sp4.Children.Add(mainWindow);
+        }
     }
+}

@@ -19,10 +19,9 @@ namespace XacDinhLoiGiaiDung
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow : UserControl
     {
         private ListAnswer listAnswer;
-        private Answer answer;
         private string answer_ = "";
         public ListAnswer listAnwer { get => listAnswer; set { listAnswer = value; } }
         public MainWindow()

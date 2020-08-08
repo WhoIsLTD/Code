@@ -66,18 +66,11 @@
     <Compile Include="Mainn.xaml.cs">
       <DependentUpon>Mainn.xaml</DependentUpon>
     </Compile>
-    <Compile Include="WindowControl.xaml.cs">
-      <DependentUpon>WindowControl.xaml</DependentUpon>
-    </Compile>
     <Page Include="EditTuRaDe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Mainn.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="MainTuRaDe.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -92,17 +85,10 @@
     <Compile Include="EditTuRaDe.xaml.cs">
       <DependentUpon>EditTuRaDe.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainTuRaDe.xaml.cs">
-      <DependentUpon>MainTuRaDe.xaml</DependentUpon>
-    </Compile>
     <Compile Include="MainPhepTinh.xaml.cs">
       <DependentUpon>MainPhepTinh.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="WindowControl.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
