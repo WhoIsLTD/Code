@@ -39,9 +39,9 @@
                 <Label Content="Bài toán: " Name="lab1" Grid.Row="1" FontSize="18" FontWeight="Bold" Margin="0,0,0,1"/>
                 <Label Content="Đề bài: " Visibility="Hidden" Name="lab2" Grid.Row="1" FontSize="18" FontWeight="Bold" Margin="0,0,0,1"/>
                 <Label Content="Bài giải: " Grid.Row="1" Grid.Column="1" FontSize="18" FontWeight="Bold" Margin="0,0,0,1"/>
-                <TextBox Grid.Row="2" Background="AliceBlue" Margin="5,1,6,0" Name="BaiToan">
+                <TextBox Grid.Row="2" Background="AliceBlue" Margin="5,1,6,0" Name="BaiToan" IsReadOnly="True">
                 </TextBox>
-                <TextBox Grid.Row="2" Grid.Column="1" Background="AliceBlue" Margin="6,1,5,0" Name="LoiGiai">
+                <TextBox Grid.Row="2" Grid.Column="1" Background="AliceBlue" Margin="6,1,5,0" Name="LoiGiai" IsReadOnly="True">
                 </TextBox>
 
                 <Grid Grid.Row="3" Grid.ColumnSpan="2" Margin="-8,14,8,0">

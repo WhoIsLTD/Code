@@ -5,7 +5,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:local="clr-namespace:TuRaDeTheoPhepTinh"
     xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" mc:Ignorable="d"
-    Height="500" Width="800" Loaded="Window_Loaded" Background="#FFD1F3F2">
+    Height="520" Width="800" Loaded="Window_Loaded" Background="#FFD1F3F2">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="192*"/>
@@ -24,7 +24,7 @@
   Padding="8"
   UniformCornerRadius="6" Name="title0" Margin="0,0,0.2,82.8" Grid.RowSpan="2">
             <TextBlock
-    TextWrapping="Wrap">
+    TextWrapping="Wrap" Height="57" VerticalAlignment="Top" Margin="0,0,0,-6">
   Tự ra ra đề theo phép tính có sẵn
             </TextBlock>
         </materialDesign:Card>
