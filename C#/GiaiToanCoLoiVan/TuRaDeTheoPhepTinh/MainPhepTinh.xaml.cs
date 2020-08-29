@@ -39,8 +39,8 @@ namespace TuRaDeTheoPhepTinh
         private void SetData()
         {
             tblQuestion.Text = phepTinh.DeBai;
-            //BaiToan.Inlines.Add(phepTinh.BaiToan);
-            //LoiGiai.Inlines.Add(phepTinh.LoiGiai);
+            BaiToan.Inlines.Add(phepTinh.BaiToan);
+            LoiGiai.Inlines.Add(phepTinh.LoiGiai);
             if (phepTinh.Check == true)
             {
                 card0.Visibility = Visibility.Visible;
